@@ -1,6 +1,6 @@
 type: flying
 health: 150
-research: 00-core-capsule
+research: 00-c1-core-capsule
 alwaysUnlocked: true
 controller: builderAI
 isEnemy: false
@@ -12,6 +12,9 @@ drag: 0.1
 speed: 7
 rotateSpeed: 6
 armor: 2
+flying: true
+engineOffset: 4
+engineSize: 3
 immunities: [
   burning,
   melting
