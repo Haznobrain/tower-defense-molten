@@ -1,0 +1,18 @@
+type: CoreBlock
+health: 5000
+crushDamageMultiplier: 3
+itemCapacity: 2000
+unitType: 00-c1-protector
+unitCapModifier: 6
+thrusterLength: 15
+requirements: [
+  01-i1-boron-capsule/300
+  01-i2-molten-research-rune/2
+  ]
+research: {
+  root: true
+  name: "Tower Defense: Molten"
+  requiresUnlock: false
+}
+alwaysUnlocked: true
+category: effect
