@@ -1,6 +1,6 @@
 mesh: {
   type: NoiseMesh
-  planet: anarchy-region
+  planet: molten-zone
   seed: 143
   divisions: 5
   color1: 757575
