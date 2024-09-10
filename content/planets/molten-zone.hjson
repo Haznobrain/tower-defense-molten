@@ -1,0 +1,47 @@
+mesh: {
+  type: NoiseMesh
+  planet: anarchy-region
+  seed: 143
+  divisions: 5
+  color1: 757575
+  color2: 533636
+  colorScale: 3
+  radius: 0.8
+  octaves: 2
+  persistence: 1
+  scale: 1
+  mag: 1.5
+}
+sectorSize: 1
+generator: {
+
+}
+orbitSpacing: 12
+orbitRadius: 25
+raradius: 0.8
+minZoom: 1
+maxZoom: 4
+drawOrbit: true
+atmosphereRadIn: 0
+atmosphereRadOut: 0.3
+accessible: true
+updateLighting: true
+sectorSeed: 0
+bloom: false
+visible: true
+atmosphereColor: 525252
+iconColor: 533636
+hasAtmosphere: true
+allowSectorInvasion: false
+allowLaunchToNumbered: false
+allowWaveSimulation: true
+
+clearSectorOnLose: true
+allowLaunchSchematics: true
+allowWaves: true
+defaultCore: 00-c1-core-capsule
+parent: sun
+alwaysUnlocked: true
+hiddenItems: [
+    scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium, sand, metaglass, beryllium, tungsten, carbide
+]
