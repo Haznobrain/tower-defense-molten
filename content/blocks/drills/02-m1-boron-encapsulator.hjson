@@ -1,0 +1,18 @@
+type: Separator
+health: 400
+size: 2
+squareSprite: false
+craftTime: 60
+hasItems: true
+hasLiquids: false
+consumes: {
+}
+requirements: [
+  01-i1-boron-capsule/60
+]
+category: production
+results: [
+  01-i1-boron-capsule/1
+]
+research: 00-c1-core-capsule
+alwaysUnlocked: true
