@@ -1,6 +1,7 @@
 type: CoreBlock
 health: 5000
 crushDamageMultiplier: 3
+size: 3
 itemCapacity: 2000
 unitType: 00-c1-protector
 unitCapModifier: 6
