@@ -1,0 +1,54 @@
+type: flying
+health: 150
+research: 00-core-capsule
+alwaysUnlocked: true
+controller: builderAI
+isEnemy: false
+mineWalls: false
+mineFloor: false
+buildSpeed: 1
+accel: 0.04
+drag: 0.1
+speed: 7
+rotateSpeed: 6
+armor: 2
+immunities: [
+  burning,
+  melting
+  ]
+itemCapacity: 80
+weapons: [
+  {
+  reload: 50
+  x: 0
+  y: 5
+  inaccuracy: 8
+  shoot: {
+    shots: 3
+    shotDelay: 1
+      }
+  shootSound: shootAltLong
+  soundPitchMin: 5
+  soundPitchMax: 10
+  velocityRnd: 0.3
+  bullet: {
+    type: BasicBulletType
+    frontColor: ffffff
+    backColor: feb380
+    trailColor: feb380
+    hitColor: feb380
+    hitEffect: hitSquaresColor
+    despawnEffect: hitSquaresColor
+    damage: 25
+    knockBack: 0.1
+    height: 4
+    width: 7
+    hitSize: 6
+    trailWidth: 4
+    trailLength: 20
+    speed: 5
+    lifetime: 18
+    buildingDamageMultiplier: 0.1
+      }
+}
+]
