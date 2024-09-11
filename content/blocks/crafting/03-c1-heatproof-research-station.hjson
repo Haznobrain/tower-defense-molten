@@ -1,0 +1,22 @@
+type: GenericCrafter
+size: 2
+craftTime: 6000
+health: 800
+hasItems: true
+hasLiquids: false
+hasPower: false
+itemCapacity: 200
+consumes: {
+  items: {
+    items: [
+      01-i1-boron-capsule/100
+    ]
+  }
+}
+requirements: [
+  01-i1-boron-capsule/150
+]
+research: 00-c1-core-capsule
+alwaysUnlocked: true
+category: crafting
+outputItem: 01-i2-melting-research-rune/1
