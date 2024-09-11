@@ -1,0 +1,46 @@
+type: MassDriver
+range: 800
+rotateSpeed: 10
+knockback: 0
+reload: 60
+bulletSpeed: 800
+shootEffect: {
+  type: WaveEffect
+  sizeFrom: 24
+  sizeTo: 0
+  strokeFrom: 0
+  strokeTo: 4
+  interp: pow3In
+    }
+itemCapacity: 100
+size: 2
+smokeEffect: none
+bulletLifetime: 2
+shake: 1
+  receiveEffect: {
+  type: WaveEffect
+  sizeFrom: 24
+  sizeTo: 0
+  strokeTo: 0
+  strokeFrom: 4
+  interp: pow3Out
+    }
+loopSound: pulse
+shootSound: malignShoot
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+  }
+  {
+type: DrawRegion
+suffix: -top
+  }
+]
+}
+requirements: [
+  01-i1-boron-capsule/300
+  01-i2-molten-research-rune/3
+  ]
