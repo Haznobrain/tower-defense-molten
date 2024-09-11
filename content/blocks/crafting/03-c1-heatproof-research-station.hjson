@@ -20,3 +20,16 @@ research: 00-c1-core-capsule
 alwaysUnlocked: true
 category: crafting
 outputItem: 01-i2-melting-research-rune/1
+drawer: {
+  type: DrawMulti
+  drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawHeatRegion
+color: ff0000aa
+suffix: -heat
+}
+]
+}
