@@ -4,6 +4,7 @@ rotateSpeed: 10
 knockback: 0
 reload: 60
 bulletSpeed: 800
+squareSprite: false
 shootEffect: {
   type: WaveEffect
   sizeFrom: 24
