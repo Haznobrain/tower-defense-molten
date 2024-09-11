@@ -12,7 +12,7 @@ requirements: [
 itemCapacity: 2
 outputRouter: false
 
-speed: 0.1
+speed: 0.4
 category: distribution
 research: 00-c1-core-capsule
 alwaysUnlocked: true
