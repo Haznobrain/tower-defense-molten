@@ -1,0 +1,18 @@
+type: StackConveyor
+
+health: 70
+underBullets: true
+solid: false
+
+size: 1
+requirements: [
+ 01-i1-boron-capsule/2
+ ]
+
+itemCapacity: 2
+outputRouter: false
+
+speed: 0.1
+category: distribution
+research: 00-c1-core-capsule
+alwaysUnlocked: true
