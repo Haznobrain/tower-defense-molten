@@ -27,19 +27,7 @@ shake: 1
     }
 loopSound: pulse
 shootSound: malignShoot
-drawer: {
-type: DrawMulti
-drawers: [
-{
-type: DrawRegion
-suffix: -bottom
-  }
-  {
-type: DrawRegion
-suffix: -top
-  }
-]
-}
+baseRegion: teleporter-top
 requirements: [
   01-i1-boron-capsule/300
   01-i2-molten-research-rune/3
