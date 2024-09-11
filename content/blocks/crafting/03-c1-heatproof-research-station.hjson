@@ -28,7 +28,7 @@ type: DrawDefault
 }
 {
 type: DrawHeatRegion
-color: ff0000aa
+color: ff0000
 suffix: -heat
 }
 ]
