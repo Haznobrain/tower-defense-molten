@@ -19,7 +19,7 @@ requirements: [
 research: 00-c1-core-capsule
 alwaysUnlocked: true
 category: crafting
-outputItem: 01-i2-molten-research-rune
+outputItem: 01-i2-molten-research-rune/1
 drawer: {
   type: DrawMulti
   drawers: [
