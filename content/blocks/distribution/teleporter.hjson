@@ -27,7 +27,7 @@ shake: 1
     }
 loopSound: pulse
 shootSound: malignShoot
-baseRegion: teleporter-top
+shootY: 0
 requirements: [
   01-i1-boron-capsule/300
   01-i2-molten-research-rune/3
