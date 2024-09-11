@@ -17,7 +17,7 @@ generator: {
 
 }
 orbitSpacing: 12
-defaultEnv: 4
+defaultEnv: scorching
 orbitRadius: 25
 raradius: 0.8
 minZoom: 1
