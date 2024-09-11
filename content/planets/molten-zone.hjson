@@ -17,6 +17,7 @@ generator: {
 
 }
 orbitSpacing: 12
+defaultEnv: 5
 orbitRadius: 25
 raradius: 0.8
 minZoom: 1
