@@ -44,7 +44,6 @@ ammoTypes: {
     lifetime: 20
     chargeEffect: {
       cone: 20
-      baseRotation: 
       line: true
       lenFrom: 2
       lenTo: 6
