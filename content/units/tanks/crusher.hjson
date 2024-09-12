@@ -1,0 +1,62 @@
+type: tank
+template: TankUnitType
+crushDamage: 1.5
+speed: 0.6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
+armor: 2
+health: 350
+hitSize: 12
+flying: false
+treadRects: [
+{
+x: -4
+y: 15
+width: 5
+height: 12
+}
+  {
+x: -15
+y: -24
+width: 5
+height: 18
+}
+]
+rotateSpeed: 3
+weapons: [
+  {
+  minWarmup: 1
+  shootWarmupSpeed: 0.001
+  reload: 30
+  x: 0
+  y: 0
+  mirror: false
+  parts: [
+    {
+    type: FlarePart
+    radius: 0
+    radiusTo: 20
+    color1: d3b0ff
+    color2: ffffff
+    progress: warmup
+      }
+    {
+    type: FlarePart
+    radius: 0
+    radiusTo: 12
+    spinSpeed: 5
+    color1: d3b0ff
+    color2: ffffff
+    progress: warmup
+      }
+    ]
+  bullet: {
+    type: ExplosionBulletType
+    splashDamage: 120
+    splashDamageRadius: 30
+    rangeOverride: 6
+    shootEffect: massiveExplosion
+    despawnEffect: none
+    smokeEffect: none
+    hitEffect: none
+      }
+  shootOnDeath: false
+    }
