@@ -9,6 +9,7 @@ parts: [
   progress: recoil
   heatColor: ff0000
   suffix: -cover
+  moveY: -6
     }
 ]
 }
@@ -42,6 +43,8 @@ ammoTypes: {
     frontColor: eadaff
     speed: 6
     lifetime: 20
+    shootEffect: shootSmallColor
+    smokeEffect: colorSpark
     chargeEffect: {
       cone: 20
       line: true
