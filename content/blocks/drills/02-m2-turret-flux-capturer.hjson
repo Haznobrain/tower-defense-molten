@@ -16,7 +16,7 @@ category: production
 results: [
   01-i3-turret-flux-capsule/1
 ]
-research: 03-m1-boron-encapsulator
+research: 02-m1-boron-encapsulator
 researchCost: [
       01-i2-molten-research-rune/1
       ]
