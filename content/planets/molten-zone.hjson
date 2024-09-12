@@ -27,6 +27,7 @@ atmosphereRadOut: 0.3
 accessible: true
 updateLighting: true
 sectorSeed: 0
+startSector: 3
 bloom: false
 visible: true
 atmosphereColor: 525252
