@@ -24,7 +24,8 @@ rotateSpeed: 3
 weapons: [
   {
   minWarmup: 1
-  shootWarmupSpeed: 0.001
+  shootWarmupSpeed: 0.009
+  linearWarmup: true
   reload: 30
   x: 0
   y: 0
