@@ -23,7 +23,7 @@ category: turret
 shootCone: 3
 rotateSpeed: 4.9
 shootShake: 5
-shootSound: smelter
+shootSound: laser
 soundPitchMin: 3
 soundPitchMax: 4
 ammoTypes: {
