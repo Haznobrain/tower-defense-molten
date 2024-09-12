@@ -63,4 +63,5 @@ ammoTypes: {
 
 requirements: [
   01-i1-boron-capsule/120
+  01-i3-turret-flux-capsule/10
   ]
