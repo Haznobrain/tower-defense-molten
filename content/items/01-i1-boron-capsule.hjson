@@ -2,3 +2,4 @@ flammability: 0.1
 explosivity: 0.1
 color: d3b0ff
 alwaysUnlocked: true
+research: 00-c1-core-capsule
