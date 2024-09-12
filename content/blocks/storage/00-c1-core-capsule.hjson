@@ -14,6 +14,7 @@ research: {
   root: true
   name: "Tower Defense: Molten"
   requiresUnlock: false
+  planet: molten-zone
 }
 alwaysUnlocked: true
 category: effect
