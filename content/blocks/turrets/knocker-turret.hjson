@@ -8,6 +8,7 @@ parts: [
   type: RegionPart
   progress: recoil
   heatColor: ff0000
+  suffix: -cover
     }
 ]
 }
@@ -39,9 +40,11 @@ ammoTypes: {
     hitColor: d3b0ff
     despawnEffect: hitBulletColor
     frontColor: eadaff
+    speed: 6
+    lifetime: 20
     chargeEffect: {
       cone: 20
-      baseRotation: 180
+      baseRotation: 
       line: true
       lenFrom: 2
       lenTo: 6
