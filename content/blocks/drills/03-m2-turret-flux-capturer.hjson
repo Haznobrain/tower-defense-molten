@@ -18,6 +18,6 @@ results: [
 ]
 research: 03-m1-boron-encapsulator
 researchCost: [
-      01-i3-molten-research-rune/1
+      01-i2-molten-research-rune/1
       ]
 alwaysUnlocked: false
