@@ -6,6 +6,7 @@ armor: 2
 health: 350
 hitSize: 12
 flying: false
+controller: SuicideAI
 treadRects: [
 {
 x: -4
