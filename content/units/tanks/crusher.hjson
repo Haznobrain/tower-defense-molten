@@ -20,6 +20,8 @@ width: 5
 height: 18
 }
 ]
+treadFrames: 12
+treadPullOffset: 2
 rotateSpeed: 3
 weapons: [
   {
