@@ -1,0 +1,61 @@
+type: ItemTurret
+size: 2
+drawer: {
+type: DrawTurret
+basePrefix: molten-
+parts: [
+  {
+  type: RegionPart
+  progress: recoil
+  heatColor: ff0000
+    }
+]
+}
+heatColor: ff0000
+reload: 90
+shoot: {
+firstShotDelay: 30
+  }
+range: 120
+category: turret
+shootCone: 3
+rotateSpeed: 4.9
+shootShake: 5
+shootSound: smelter
+soundPitchMin: 3
+soundPitchMax: 4
+ammoTypes: {
+  01-i1-boron-capsule: {
+    type: BasicBulletType
+    damage: 30
+    trailLength: 10
+    trailWidth: 2.2
+    width: 8
+    height: 8
+    knockback: 5
+    hitEffect: hitBulletColor
+    backColor: d3b0ff
+    trailColor: d3b0ff
+    hitColor: d3b0ff
+    despawnEffect: hitBulletColor
+    frontColor: eadaff
+    chargeEffect: {
+      cone: 20
+      baseRotation: 180
+      line: true
+      lenFrom: 2
+      lenTo: 6
+      sizeInterp: slope
+      colorFrom: eadaffaa
+      colorTo: eadaffaa
+      baseLength: -20
+      length: 20
+      lifetime: 30
+      interp: pow3In
+        }
+  }
+}
+
+requirements: [
+  01-i1-boron-capsule/120
+  ]
