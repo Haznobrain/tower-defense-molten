@@ -9,7 +9,7 @@ consumes: {
 }
 requirements: [
   01-i1-boron-capsule/110
-  02-i2-molten-research-rune/1
+  01-i2-molten-research-rune/1
 ]
 category: production
 
