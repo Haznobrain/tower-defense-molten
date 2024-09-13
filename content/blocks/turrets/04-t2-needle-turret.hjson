@@ -73,7 +73,7 @@ ammoTypes: {
     lightColor: b0f7ff
     trailColor: b0f7ff
     hitColor: b0f7ff
-    despawnEffect: b0f7ff
+    despawnEffect: none
     shootEffect: {
       type: MultiEffect
       effects: [
