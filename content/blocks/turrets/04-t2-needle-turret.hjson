@@ -61,7 +61,7 @@ parts: [
 ammoCapacity: 100
 ammoPerShot: 4
 ammoTypes: {
-  01-i3-turret-flux-capsule: {
+  01-i3-turret-flux-capsule: { 
     type: BasicBulletType
     ammoMultiplier: 8
     damage: 8
@@ -92,7 +92,6 @@ ammoTypes: {
           strokeTo: 1
           colorFrom: ffffff
           colorTo: b0f7ff
-          baseRotation: 90
             }
       lengthOffset: 2
       rotationSpacing: 180
@@ -113,7 +112,6 @@ ammoTypes: {
           strokeTo: 1
           colorFrom: ffffff
           colorTo: b0f7ff
-          baseRotation: 90
             }
       lengthOffset: 5
       rotationSpacing: 180
@@ -148,7 +146,6 @@ ammoTypes: {
           strokeTo: 1
           colorFrom: ffffff
           colorTo: b0f7ff
-          baseRotation: 90
             }
       lengthOffset: 2
       rotationSpacing: 180
@@ -169,7 +166,6 @@ ammoTypes: {
           strokeTo: 1
           colorFrom: ffffff
           colorTo: b0f7ff
-          baseRotation: 90
             }
       lengthOffset: 5
       rotationSpacing: 180
