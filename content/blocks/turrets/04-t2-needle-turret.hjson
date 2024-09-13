@@ -63,6 +63,8 @@ ammoPerShot: 4
 ammoTypes: {
   01-i3-turret-flux-capsule: { 
     type: BasicBulletType
+    height: 8
+    width: 8
     ammoMultiplier: 8
     damage: 8
     pierce: true
@@ -75,11 +77,6 @@ ammoTypes: {
     hitColor: b0f7ff
     despawnEffect: none
     shootEffect: {
-      type: MultiEffect
-      effects: [
-{
-      type: RadialEffect
-      effect: {
           type: ParticleEffect
           particles: 10
           lifetime: 35
@@ -92,32 +89,6 @@ ammoTypes: {
           strokeTo: 1
           colorFrom: ffffff
           colorTo: b0f7ff
-            }
-      lengthOffset: 2
-      rotationSpacing: 180
-      amount: 2
-        }
-        {
-      type: RadialEffect
-      effect: {
-          type: ParticleEffect
-          particles: 10
-          lifetime: 35
-          line: true
-          lenFrom: 5
-          lenTo: 0
-          cone: 3
-          length: 24
-          strokeFrom: 1
-          strokeTo: 1
-          colorFrom: ffffff
-          colorTo: b0f7ff
-            }
-      lengthOffset: 5
-      rotationSpacing: 180
-      amount: 2
-        }
-]
     }
     speed: 10
     lifetime: 15
@@ -128,12 +99,7 @@ ammoTypes: {
     trailWidth: 1
       }
 01-i2-molten-research-rune: {
-    shootEffect: {
-      type: MultiEffect
-      effects: [
-{
-      type: RadialEffect
-      effect: {
+    shootEffect:  {
           type: ParticleEffect
           particles: 10
           lifetime: 35
@@ -146,32 +112,7 @@ ammoTypes: {
           strokeTo: 1
           colorFrom: ffffff
           colorTo: b0f7ff
-            }
-      lengthOffset: 2
-      rotationSpacing: 180
-      amount: 2
-        }
-        {
-      type: RadialEffect
-      effect: {
-          type: ParticleEffect
-          particles: 10
-          lifetime: 35
-          line: true
-          lenFrom: 5
-          lenTo: 0
-          cone: 3
-          length: 24
-          strokeFrom: 1
-          strokeTo: 1
-          colorFrom: ffffff
-          colorTo: b0f7ff
-            }
-      lengthOffset: 5
-      rotationSpacing: 180
-      amount: 2
-        }
-]
+          baseRotation: 180
     }
     ammoMultiplier: 1
     spawnUnit: 04-t2-needle-turret-needle
