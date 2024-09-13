@@ -3,13 +3,14 @@ speed: 3
 drawCell: false
 flying: true
 controller: MissileAI
+template: MissileUnitType
 lifetime: 900
 rotateSpeed: 8
 omniMovement: false
 targetable: false
 health: 90
 hitSize: 3
-engineOffset: 5
+engineOffset: 2
 engineSize: 1
 engineColor: b0f7ff
 physics: false
