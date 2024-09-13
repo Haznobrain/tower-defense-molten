@@ -13,6 +13,7 @@ hitSize: 3
 engineOffset: 2
 engineSize: 1
 engineColor: b0f7ff
+trailColor: b0f7ff
 physics: false
 isEnemy: false
 allowedInPayloads: false
