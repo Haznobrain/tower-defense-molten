@@ -1,0 +1,43 @@
+type: missile
+speed: 3
+drawCell: false
+flying: true
+controller: MissileAI
+lifetime: 900
+rotateSpeed: 8
+omniMovement: false
+targetable: false
+health: 90
+hitSize: 3
+engineOffset: 5
+engineSize: 1
+engineColor: b0f7ff
+physics: false
+isEnemy: false
+allowedInPayloads: false
+targetAir: true
+useUnitCap: false
+createWreck: false
+createScorch: false
+hidden: true
+weapons: [
+{
+reload: 1
+mirror: false
+shootCone: 10
+x: 0
+y: 0
+bullet: {
+  type: BulletType
+  damage: 10
+  speed: 0
+  hitSize: 10
+  rangeOverride: 10
+  lifetime: 0
+  hitEffect: hitBulletColor
+  shootEffect: none
+  despawnEffect: none
+  smokeEffect: none
+    }
+}
+  ]
