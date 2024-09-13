@@ -29,13 +29,14 @@ mirror: false
 shootCone: 10
 x: 0
 y: 0
+shootSound: none
 bullet: {
   type: BulletType
   damage: 10
   speed: 0
   hitSize: 10
   rangeOverride: 10
-  lifetime: 0
+  lifetime: 1
   hitEffect: hitBulletColor
   shootEffect: none
   despawnEffect: none
