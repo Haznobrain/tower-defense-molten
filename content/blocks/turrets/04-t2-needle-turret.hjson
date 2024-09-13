@@ -1,0 +1,192 @@
+type: ItemTurret
+reload: 10
+range: 150
+size: 2
+heatColor: ff0000
+shootY: 4
+category: turret
+rotateSpeed: 10
+shootCone: 5
+shootSound: bolt
+soundPitchMin: 3
+soundPitchMax: 4
+shootShake: 0.5
+outlineColor: 2d2f39
+drawer: {
+type: DrawTurret
+basePrefix: molten-
+parts: [
+  {
+  type: RegionPart
+  suffix: needle-
+  progress: {
+    type: reload
+    op: curve
+    interp: pow5In
+      }
+  moveY: -5
+  colorTo: 00000000
+  mixColorTo: b0f7ff
+  mixColor: 00000000
+  color: ffffffff
+    }
+{
+  type: RegionPart
+  mirror: true
+  suffix: -arm
+  moveRot: -10
+  moveY: -2
+  heatColor: ff0000
+  progress: reload
+  heatProgress: recoil
+    }
+{
+  type: RegionPart
+  suffix: -bottom
+  moveY: -1
+  heatColor: ff0000
+  progress: reload
+  heatProgress: recoil
+}
+{
+  type: RegionPart
+  suffix: -cover
+  heatColor: ff0000
+  moveY: -1.5
+  progress: reload
+  heatProgress: recoil
+    }
+]
+}
+ammoCapacity: 100
+ammoPerShot: 4
+ammoTypes: {
+  01-i3-turret-flux-capsule: {
+    type: BasicBulletType
+    ammoMultiplier: 8
+    damage: 8
+    pierce: true
+    hitEffect: hitBulletColor
+    sprite: 04-t2-needle-turret-needle
+    backSprite: none
+    frontColor: b0f7ff
+    lightColor: b0f7ff
+    trailColor: b0f7ff
+    hitColor: b0f7ff
+    despawnEffect: b0f7ff
+    shootEffect: {
+      type: MultiEffect
+      effects: [
+{
+      type: RadialEffect
+      effect: {
+          type: ParticleEffect
+          particles: 10
+          lifetime: 35
+          line: true
+          lenFrom: 5
+          lenTo: 0
+          cone: 3
+          length: 24
+          strokeFrom: 1
+          strokeTo: 1
+          colorFrom: ffffff
+          colorTo: b0f7ff
+          baseRotation: 90
+            }
+      lengthOffset: 2
+      rotationSpacing: 180
+      amount: 2
+        }
+        {
+      type: RadialEffect
+      effect: {
+          type: ParticleEffect
+          particles: 10
+          lifetime: 35
+          line: true
+          lenFrom: 5
+          lenTo: 0
+          cone: 3
+          length: 24
+          strokeFrom: 1
+          strokeTo: 1
+          colorFrom: ffffff
+          colorTo: b0f7ff
+          baseRotation: 90
+            }
+      lengthOffset: 5
+      rotationSpacing: 180
+      amount: 2
+        }
+]
+    }
+    speed: 10
+    lifetime: 15
+    trailEffect: disperseTrail
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 2
+    trailWidth: 1
+      }
+01-i2-molten-research-rune: {
+    shootEffect: {
+      type: MultiEffect
+      effects: [
+{
+      type: RadialEffect
+      effect: {
+          type: ParticleEffect
+          particles: 10
+          lifetime: 35
+          line: true
+          lenFrom: 5
+          lenTo: 0
+          cone: 3
+          length: 24
+          strokeFrom: 1
+          strokeTo: 1
+          colorFrom: ffffff
+          colorTo: b0f7ff
+          baseRotation: 90
+            }
+      lengthOffset: 2
+      rotationSpacing: 180
+      amount: 2
+        }
+        {
+      type: RadialEffect
+      effect: {
+          type: ParticleEffect
+          particles: 10
+          lifetime: 35
+          line: true
+          lenFrom: 5
+          lenTo: 0
+          cone: 3
+          length: 24
+          strokeFrom: 1
+          strokeTo: 1
+          colorFrom: ffffff
+          colorTo: b0f7ff
+          baseRotation: 90
+            }
+      lengthOffset: 5
+      rotationSpacing: 180
+      amount: 2
+        }
+]
+    }
+    ammoMultiplier: 1
+    spawnUnit: 04-t2-needle-turret-needle
+      }
+}
+requirements: [
+  01-i1-boron-capsule/180
+  01-i3-turret-flux-capsule/25
+  ]
+research: 04-t1-knocker-turret
+researchCost: [
+    01-i3-turret-flux-capsule/25
+    01-i2-molten-research-rune/1
+  ]
