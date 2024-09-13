@@ -67,7 +67,7 @@ ammoTypes: {
     damage: 8
     pierce: true
     hitEffect: hitBulletColor
-    sprite: 04-t2-needle-turret-needle
+    sprite: towerdefensemolten-04-t2-needle-turret-needle
     backSprite: none
     frontColor: b0f7ff
     lightColor: b0f7ff
