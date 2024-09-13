@@ -179,6 +179,8 @@ ammoTypes: {
     }
     ammoMultiplier: 1
     spawnUnit: 04-t2-needle-turret-needle
+    reloadMultiplier: 0.05
+    rangeChange: 150
       }
 }
 requirements: [
