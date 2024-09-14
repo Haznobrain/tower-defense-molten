@@ -4,7 +4,7 @@
     research: {
         parent: 00-s1-reactivation
         objectives: [
-        04-s2-needle-turret
+        04-t2-needle-turret
           {
           type: SectorComplete
           preset: 00-s1-reactivation
