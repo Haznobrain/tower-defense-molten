@@ -35,7 +35,7 @@ weapons: [
   rotateSpeed: 2.8
   x: 0
   y: 0
-  shootY: 6
+  shootY: 12
   parts: [
     {
     type: HaloPart
@@ -47,7 +47,7 @@ weapons: [
     color: b0f7ff
     triLengthTo: 0
     progress: reload
-    radius: 1
+    radius: 2
     haloRadius: 3
       }
     {
@@ -61,7 +61,7 @@ weapons: [
     color: b0f7ff
     triLengthTo: 0
     progress: reload
-    radius: 1
+    radius: 2
     haloRadius: 3
       }
         ]
@@ -71,6 +71,9 @@ weapons: [
       damage: 25
       pierceDamageFactor: 0.1
       length: 100
+      shootEffect: shootSmallColor
+      smokeEffect: colorSpark
+      hitColor: b0f7ff
       hitEffect: {
         type: ParticleEffect
         line: true
