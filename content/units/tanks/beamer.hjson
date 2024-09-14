@@ -65,7 +65,6 @@ weapons: [
     haloRadius: 3
       }
         ]
-      }
     shootSound: bolt
     bullet: {
       type: RailBulletType
