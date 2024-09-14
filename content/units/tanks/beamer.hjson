@@ -1,0 +1,128 @@
+type: tank
+template: TankUnitType
+speed: 0.8
+armor: 1
+health: 300
+hitSize: 14
+flying: false
+envDisabled: 0
+treadRects: [
+{
+x: -16
+y: 7
+width: 5
+height: 12
+}
+  {
+x: -6
+y: -23
+width: 6
+height: 12
+}
+]
+treadFrames: 12
+treadPullOffset: 2
+rotateSpeed: 3
+rotateMoveFirst: true
+outlineColor: 2d2f39
+weapons: [
+  {
+  name: beamer-weapon
+  reload: 40
+  range: 100
+  mirror: false
+  rotate: true
+  rotateSpeed: 2.8
+  x: 0
+  y: 0
+  shootY: 6
+  parts: [
+    {
+    type: HaloPart
+    shapes: 1
+    tri: true
+    triLength: 4
+    haloRotation: 180
+    layer: 110
+    color: b0f7ff
+    triLengthTo: 0
+    progress: reload
+    radius: 1
+    haloRadius: 3
+      }
+    {
+    type: HaloPart
+    shapes: 1
+    tri: true
+    triLength: 1
+    haloRotation: 180
+    shapeRotation: 180
+    layer: 110
+    color: b0f7ff
+    triLengthTo: 0
+    progress: reload
+    radius: 1
+    haloRadius: 3
+      }
+        ]
+      }
+    shootSound: bolt
+    bullet: {
+      type: RailBulletType
+      damage: 25
+      pierceDamageFactor: 0.1
+      length: 100
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        length: 12
+        lenFrom: 5
+        lenTo: 0
+        interp: pow3Out
+        colorFrom: ffffff
+        colorTo: b0f7ff
+        lifetime: 12
+          }
+      pierceEffect: {
+        type: ParticleEffect
+        line: true
+        length: 12
+        lenFrom: 5
+        lenTo: 0
+        interp: pow3Out
+        colorFrom: ffffff
+        colorTo: b0f7ff
+        lifetime: 12
+          }
+      pointEffectSpace: 12
+      pointEffect: {
+        type: ParticleEffect
+        cone: 0
+        length: -0.001
+        line: true
+        particles: 1
+        lenFrom: 13
+        lenTo: 0
+        strokeFrom: 2
+        sizeInterp: pow3In
+        strokeTo: 1
+        colorTo: b0f7ff
+        lifetime: 35
+          }
+     lineEffect: {
+        type: ParticleEffect
+        cone: 0
+        length: -0.001
+        line: true
+        particles: 1
+        lenFrom: 13
+        lenTo: 0
+        strokeFrom: 1
+        sizeInterp: pow5In
+        strokeTo: 1
+        colorTo: b0f7ff
+        lifetime: 35
+          }
+    }
+  }
+]
