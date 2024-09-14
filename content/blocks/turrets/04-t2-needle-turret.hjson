@@ -59,7 +59,7 @@ parts: [
     }
 ]
 }
-ammoCapacity: 100
+maxAmmo: 100
 ammoPerShot: 4
 ammoTypes: {
   01-i3-turret-flux-capsule: { 
