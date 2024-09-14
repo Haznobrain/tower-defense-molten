@@ -125,7 +125,15 @@ requirements: [
   01-i1-boron-capsule/180
   01-i3-turret-flux-capsule/25
   ]
-research: 04-t1-knocker-turret
+research: {
+  parent: 04-t1-knocker-turret
+  objectives: [
+          {
+          type: SectorComplete
+          preset: 00-s1-reactivation
+          }
+        ]
+}
 researchCost: [
     01-i3-turret-flux-capsule/25
     01-i2-molten-research-rune/1
