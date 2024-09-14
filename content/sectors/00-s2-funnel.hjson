@@ -1,0 +1,15 @@
+    sector: 6,
+    planet: "molten-zone"
+    captureWave: 15
+    research: {
+        parent: 00-s1-reactivation
+        objectives: [
+        04-s2-needle-turret
+          {
+          type: SectorComplete
+          preset: 00-s1-reactivation
+          }
+        ]
+          }
+    difficulty: 3
+    alwaysUnlocked: true
