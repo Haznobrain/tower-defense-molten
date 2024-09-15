@@ -127,7 +127,7 @@ shapeRotation: 45
     spacing: 36
       }
   shootEffect: shootBigColor
-  smokeEffect: titanSmoke
+  smokeEffect: shootSmokeTitan 
   hitColor: fffb84
   despawnEffect: hitBulletColor
     }
