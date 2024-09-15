@@ -2,7 +2,7 @@ type: ConsumeGenerator
 itemDuration: 60
 itemCapacity: 20
 liquidCapacity: 200
-outputLiquid: slag
+outputLiquid: slag/0.1
 explodeOnFull: true
 explosionRadius: 6
 explosionDamage: 800
