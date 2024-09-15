@@ -8,6 +8,7 @@ explosionRadius: 6
 explosionDamage: 800
 explodeSound: largeExplosion
 category: power
+powerProduction: 1
 explodeEffect: {
   type: MultiEffect
   effects: [
