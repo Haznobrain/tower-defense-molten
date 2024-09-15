@@ -9,6 +9,7 @@ explosionDamage: 800
 explodeSound: largeExplosion
 category: power
 powerProduction: 1
+squareSprite: false
 explodeEffect: {
   type: MultiEffect
   effects: [
