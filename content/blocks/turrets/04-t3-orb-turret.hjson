@@ -27,11 +27,11 @@ parts: [
     }
 {
   type: HaloPart
-  y: -3
+  y: -4
   x: 0
   shapes: 1
   haloRotation: 90
-  haloRadius: 3
+  haloRadius: 4
   shapeRotation: 45
   tri: true
   triLengthTo: 0
@@ -42,10 +42,10 @@ parts: [
     }
 {
   type: HaloPart
-  y: -3
+  y: -4
   x: 0
   shapes: 1
-  haloRadius: 3
+  haloRadius: 4
   haloRotation: 90
   shapeRotation: 225
   tri: true
@@ -57,9 +57,9 @@ parts: [
     }
 {
   type: HaloPart
-  y: -3
+  y: -4
   x: 0
-  haloRadius: 3
+  haloRadius: 4
   shapes: 1
   haloRotation: -90
   shapeRotation: -45
@@ -72,9 +72,9 @@ parts: [
     }
 {
   type: HaloPart
-  y: -3
+  y: -4
   x: 0
-  haloRadius: 3
+  haloRadius: 4
   shapes: 1
   haloRotation: -90
   shapeRotation: -225
@@ -118,13 +118,13 @@ shapeRotation: 45
   lifetime: 125
   hitEffect: {
     type: RadialEffect
-    effects: 10
+    amount: 10
     effect: {
       type: WrapEffect
       effect: shootBigColor
       color: fffb84
         }
-    spacing: 36
+    rotationSpacing: 36
       }
   shootEffect: shootBigColor
   smokeEffect: shootSmokeTitan 
