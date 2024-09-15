@@ -1,0 +1,147 @@
+type: PowerTurret
+size: 2
+reload: 120
+range: 250
+shootY: 4
+category: turret
+rotateSpeed: 2
+shootSound: shockBlast
+recoil: 2
+soundPitchMin: 1
+soundPitchMax: 2
+shootShake: 2
+outlineColor: 2d2f39
+drawer: {
+type: DrawTurret
+basePrefix: molten-
+parts: [
+  {
+  type: RegionPart
+  moveY: 2
+  suffix: -cover
+  moveX: 1
+  heatColor: fffcb1
+  progress: recoil
+  heatProgress: recoil
+    }
+{
+  type: HaloPart
+  y: -3
+  x: 0
+  shapes: 1
+  haloRotation: 90
+  shapeRotation: 45
+  tri: true
+  triLengthTo: 0
+  triLength: 4
+  color: fffb84
+  layer: 110
+  progress: recoil
+    }
+{
+  type: HaloPart
+  y: -3
+  x: 0
+  shapes: 1
+  haloRotation: 90
+  shapeRotation: 225
+  tri: true
+  triLengthTo: 0
+  triLength: 1
+  color: fffb84
+  layer: 110
+  progress: recoil
+    }
+{
+  type: HaloPart
+  y: -3
+  x: 0
+  shapes: 1
+  haloRotation: -90
+  shapeRotation: -45
+  tri: true
+  triLengthTo: 0
+  triLength: 4
+  color: fffb84
+  layer: 110
+  progress: recoil
+    }
+{
+  type: HaloPart
+  y: -3
+  x: 0
+  shapes: 1
+  haloRotation: -90
+  shapeRotation: -225
+  tri: true
+  triLengthTo: 0
+  triLength: 1
+  color: fffb84
+  layer: 110
+  progress: recoil
+    }
+]
+}
+consumes: {
+  power: 5
+  liquids: [
+    {
+    liquid: slag
+    amount: 0.05
+      }
+]
+}
+shootType: {
+  type: BulletType
+  parts: [
+{
+type: HaloPart
+shapes: 10
+radius: 3.6
+hollow: true
+sides: 4
+color: fffb84
+layer: 110
+haloRotateSpeed: 5
+haloRadius: 8
+}
+    ]
+  damage: 150
+  pierceArmor: true
+  speed: 2
+  lifetime: 125
+  hitEffect: {
+    type: RadialEffect
+    effects: 10
+    effect: {
+      type: WrapEffect
+      effect: shootBigColor
+      color: fffb84
+        }
+    spacing: 36
+      }
+  shootEffect: shootBigColor
+  smokeEffect: shootTitanSmoke
+  hitColor: fffb84
+  despawnEffect: hitBulletColor
+    }
+
+requirements: [
+  01-i1-boron-capsule/400
+  01-i3-turret-flux-capsule/50
+  01-i4-power-flux-capsule/20
+  ]
+research: {
+  parent: 04-t2-needle-turret
+  objectives: [
+    06-p1-flux-generator
+    {
+    type: SectorComplete
+    preset: 00-s2-funnel
+    }
+      ]
+    }
+researchCost: [
+  01-i2-molten-research-rune/2
+  01-i4-power-flux-capsule/50
+  ]
