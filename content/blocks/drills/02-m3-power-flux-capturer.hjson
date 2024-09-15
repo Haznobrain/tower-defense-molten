@@ -1,0 +1,27 @@
+type: Separator
+health: 600
+size: 2
+squareSprite: false
+craftTime: 120
+hasItems: true
+hasLiquids: false
+consumes: {
+}
+requirements: [
+  01-i1-boron-capsule/120
+  01-i2-molten-research-rune/1
+]
+category: production
+
+results: [
+  01-i4-power-flux-capsule/1
+]
+research: {
+    parent: 02-m3-turret-flux-capturer
+    objectives: [
+{
+type: SectorComplete
+preset: 00-s2-funnel
+  }
+      ]
+}
