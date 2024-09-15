@@ -1,0 +1,29 @@
+type: Battery
+size: 1
+emtpyLightColor: ffaa5f
+fullLightColor: fffb84
+hasPower: true
+	"outputsPower": true,
+	"consumesPower": true,
+	"hasItems": false,
+canOverdrive: false
+  consumes: {
+    powerBuffered: 3000
+}
+category: power
+requirements: [
+  01-i1-boron-capsule/50
+  ]
+  //once again: placholder reqs
+  research: {
+    parent: 06-p1-flux-generator
+    objectives: [
+{
+type: SectorComplete
+preset: 00-s2-funnel
+  }
+      ]
+}
+researchCost: [
+  01-i2-molten-research-rune/1
+  ]
