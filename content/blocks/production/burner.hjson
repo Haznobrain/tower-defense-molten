@@ -1,0 +1,17 @@
+type: incinerator
+size: 1
+research: [
+  parent: 03-c1-heatproof-research-station
+  objectives: [
+{
+type: SectorComplete
+preset: 00-s2-funnel
+  }
+  ]
+  }
+researchCost: [
+  molten-research-rune/2
+  ]
+requirements: [
+  01-i4-power-flux-capsule/5
+  ]
