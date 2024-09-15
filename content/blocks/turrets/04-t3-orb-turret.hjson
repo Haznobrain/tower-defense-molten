@@ -121,7 +121,7 @@ haloRadius: 8
     spacing: 36
       }
   shootEffect: shootBigColor
-  smokeEffect: shootTitanSmoke
+  smokeEffect: shootSmokeTitan
   hitColor: fffb84
   despawnEffect: hitBulletColor
     }
