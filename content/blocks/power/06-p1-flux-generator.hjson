@@ -79,7 +79,7 @@ scale: 6
 research: {
   parent: 00-c1-core-capsule
   objectives: [
-    04-m2-turret-flux-capturer
+    02-m2-turret-flux-capturer
     {
     type: SectorComplete
     preset: 00-s2-funnel
