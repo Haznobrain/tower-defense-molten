@@ -14,6 +14,7 @@ category: power
 squareSprite: false
 requirements: [
   01-i1-boron-capsule/50
+  01-i4-power-flux-capsule/15
   ]
   //once again: placholder reqs
   research: {
