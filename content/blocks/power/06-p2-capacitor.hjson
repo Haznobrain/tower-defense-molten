@@ -11,6 +11,7 @@ canOverdrive: false
     powerBuffered: 3000
 }
 category: power
+squareSprite: false
 requirements: [
   01-i1-boron-capsule/50
   ]
