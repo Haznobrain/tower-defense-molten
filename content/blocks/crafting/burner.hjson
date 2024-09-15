@@ -1,7 +1,7 @@
 type: incinerator
 size: 1
 category: crafting
-research: [
+research: {
   parent: 03-c1-heatproof-research-station
   objectives: [
 {
