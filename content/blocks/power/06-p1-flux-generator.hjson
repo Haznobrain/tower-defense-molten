@@ -94,6 +94,6 @@ researchCost: [
   ]
 requirements: [
   01-i1-boron-capsule/150
-  01-i3-turret-flux-capsule/20
+  01-i4-power-flux-capsule/20
   ]
 //placeholder requirements, i'll make the power flux capsule later.
