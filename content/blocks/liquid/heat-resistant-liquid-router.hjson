@@ -1,0 +1,21 @@
+type: LiquidRouter
+health: 100
+liquidCapacity: 30
+category: liquid
+placeableLiquid: true
+hasPower: false
+requirements: [
+    01-i1-boron-capsule/5
+]
+research: {
+    parent: "00-c1-core-capsule",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "00-s2-funnel
+        }
+    ]
+},
+researchCost: [
+    01-i2-molten-research-rune/1
+  ]
