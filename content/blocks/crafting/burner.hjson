@@ -11,7 +11,7 @@ preset: 00-s2-funnel
   ]
   }
 researchCost: [
-  molten-research-rune/2
+  01-i2-molten-research-rune/2
   ]
 requirements: [
   01-i4-power-flux-capsule/5
