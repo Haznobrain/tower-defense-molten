@@ -23,6 +23,7 @@ parts: [
   heatColor: fffcb1
   progress: recoil
   heatProgress: recoil
+  mirror: true
     }
 {
   type: HaloPart
@@ -30,6 +31,7 @@ parts: [
   x: 0
   shapes: 1
   haloRotation: 90
+  haloRadius: 3
   shapeRotation: 45
   tri: true
   triLengthTo: 0
@@ -43,6 +45,7 @@ parts: [
   y: -3
   x: 0
   shapes: 1
+  haloRadius: 3
   haloRotation: 90
   shapeRotation: 225
   tri: true
@@ -56,6 +59,7 @@ parts: [
   type: HaloPart
   y: -3
   x: 0
+  haloRadius: 3
   shapes: 1
   haloRotation: -90
   shapeRotation: -45
@@ -70,6 +74,7 @@ parts: [
   type: HaloPart
   y: -3
   x: 0
+  haloRadius: 3
   shapes: 1
   haloRotation: -90
   shapeRotation: -225
@@ -104,6 +109,7 @@ color: fffb84
 layer: 110
 haloRotateSpeed: 5
 haloRadius: 8
+shapeRotation: 45
 }
     ]
   damage: 150
