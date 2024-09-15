@@ -90,6 +90,7 @@ ammoTypes: {
           strokeTo: 1
           colorFrom: ffffff
           colorTo: b0f7ff
+          followParent: true
     }
     speed: 10
     lifetime: 15
@@ -114,6 +115,7 @@ ammoTypes: {
           colorFrom: ffffff
           colorTo: b0f7ff
           baseRotation: 180
+          followParent: true
     }
     ammoMultiplier: 1
     spawnUnit: 04-t2-needle-turret-needle
