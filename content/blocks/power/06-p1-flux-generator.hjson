@@ -1,0 +1,91 @@
+type: ConsumeGenerator
+itemDuration: 60
+itemCapacity: 20
+liquidCapacity: 200
+outputLiquid: slag
+explodeOnFull: true
+explosionRadius: 6
+explosionDamage: 800
+explodeSound: largeExplosion
+explosionEffect: {
+  type: MultiEffect
+  effects: [
+{
+type: WaveEffect
+lifetime: 10
+sizeTo: 48
+strokeFrom: 6
+colorTo: b0f7ff
+}
+    {
+type: ParticleEffect
+particles: 8
+line: true
+lifetime: 30
+length: 48
+lenFrom: 6
+interp: circleOut
+sizeInterp: pow5In
+colorTo: b0f7ff
+  }
+{
+type: ParticleEffect
+particles: 10
+sizeFrom: 6
+colorFrom: b0f7ffaa
+colorTo: b0f7ffaa
+lightColor: b0f7ff
+lifetime: 180
+interp: pow10Out
+sizeInterp: pow5In
+  }
+]
+}
+explosionPuddleLiquid: slag
+explosionPuddleAmount: 40
+size: 2
+consumes: {
+  items: [
+      01-i3-turret-flux-capsule/1
+    ]
+    }
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+  {
+type: DrawLiquidTile
+padding: 4
+drawLiquid: slag
+}
+{
+type: DrawArcSmelt
+flameColor: b0f7ff
+midColor: b0f7ff
+  }
+{
+type: DrawDefault
+  }
+{
+type: DrawFade
+suffix: -fade
+scale: 6
+  }
+]
+}
+research: {
+  parent: 00-c1-core-capsule
+  objectives: [
+    04-m2-turret-flux-capturer
+    {
+    type: SectorComplete
+    preset: 00-s2-funnel
+    }
+    ]
+    }
+researchCost: [
+  01-i2-molten-research-rune/1
+  ]
