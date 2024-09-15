@@ -7,7 +7,8 @@ explodeOnFull: true
 explosionRadius: 6
 explosionDamage: 800
 explodeSound: largeExplosion
-explosionEffect: {
+category: power
+explodeEffect: {
   type: MultiEffect
   effects: [
 {
