@@ -13,6 +13,8 @@ mesh: {
   mag: 1.5
 }
 sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchLoadout: false
 generator: {
 
 }
