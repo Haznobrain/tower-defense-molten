@@ -17,7 +17,7 @@ results: [
   01-i4-power-flux-capsule/1
 ]
 research: {
-    parent: 02-m3-turret-flux-capturer
+    parent: 02-m2-turret-flux-capturer
     objectives: [
 {
 type: SectorComplete
