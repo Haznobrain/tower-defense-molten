@@ -1,0 +1,16 @@
+type: crawl
+segments: 3
+health: 2300
+armor: 5
+hitSize: 20
+crushDamage: 6
+omniMovement: false
+rotateSpeed: 2
+drownTimeMultiplier: 5
+drawBody: false
+drawCell: false
+targetAir: false
+segmentScl: 3
+segmentPhase: 5
+segmentMag: 1
+speed: 0.6
