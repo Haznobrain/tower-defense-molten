@@ -4,7 +4,6 @@ health: 2300
 armor: 5
 hitSize: 20
 circleTarget: true
-faceTarget: false
 crushDamage: 6
 omniMovement: false
 rotateSpeed: 2
