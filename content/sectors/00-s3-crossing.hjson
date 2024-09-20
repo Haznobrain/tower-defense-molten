@@ -2,7 +2,7 @@
     planet: "molten-zone"
     captureWave: 20
     research: {
-        parent: 00-s1-reactivation
+        parent: 00-s2-funnel
         objectives: [
         04-t3-orb-turret,
         06-p1-flux-generator
