@@ -15,3 +15,4 @@ segmentScl: 3
 segmentPhase: 5
 segmentMag: 1
 speed: 0.6
+envDisabled: 0
