@@ -42,6 +42,7 @@ shootCone: 15
 inaccuracy: 12
 shootSound: malignShoot
 shootY: 0
+recoil: 0
 bullet: {
   type: BasicBulletType
   damage: 40
@@ -66,6 +67,8 @@ bullet: {
   shrinkY: 0
   shrinkX: 0
   homingPower: 0.12
+  frontColor: ffffff
+  backColor: 5ffc6e
   spin: 1
     }
 }
