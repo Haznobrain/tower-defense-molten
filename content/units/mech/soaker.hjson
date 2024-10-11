@@ -1,0 +1,72 @@
+type: mech
+hitSize: 24
+health: 6000
+speed: 0.27
+armor: 15
+rotateSpeed: 1.8
+baseRotateSpeed: 2.3
+rotateMoveFirst: true
+outlineColor: 2d2f39
+flying: false
+weapons: [
+{
+x: 0
+y: 8
+mirror: false
+parts: [
+{
+type: ShapePart
+color: 5ffc6e
+circle: true
+radius: 0
+radiusTo: 4
+layer: 110
+hollow: true
+stroke: 0
+strokeTo: 1
+}
+  {
+type: ShapePart
+sides: 3
+radius: 0
+radiusTo: 3
+stroke: 0
+strokeTo: 1
+hollow: true
+color:5ffc6e
+layer: 110
+}
+]
+reload: 30
+shootCone: 15
+inaccuracy: 12
+shootSound: malignShoot
+shootY: 0
+bullet: {
+  type: BasicBulletType
+  damage: 40
+  splashDamage: 10
+  splashDamageRadius: 6
+  sprite: mine-bullet
+  speed: 3
+  lifetime: 25
+  hitEffect: greenCloud
+  despawnEffect: greenCloud
+  shootEffect: shootSmokeSquareBig
+  smokeEffect: shootSmokeDisperse
+  trailEffect: {
+    type: ParticleEffect
+    region: mine-bullet
+    colorTo: 5ffc6e
+    length: 12
+      }
+  trailInterval: 1
+  width: 10
+  height: 10
+  shrinkY: 0
+  shrinkX: 0
+  homingPower: 0.12
+  spin: 1
+    }
+}
+  ]
