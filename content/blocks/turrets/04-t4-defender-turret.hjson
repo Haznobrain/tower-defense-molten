@@ -1,0 +1,76 @@
+type: ItemTurret
+range: 90
+reload: 80
+size: 2
+shootY: 6
+category: turret
+rotateSpeed: 3
+shootSound: plasmaBoom
+soundPitchMin: -1
+soundPitchMax: 0
+shootShake: 0.7
+drawer:{ 
+  basePrefix: molten-
+  type: DrawTurret
+  parts: [
+{
+    type: RegionPart
+    suffix: -barrel
+    moveY: -4
+    progress: recoil
+}
+    {
+type: RegionPart
+suffix: -cover
+moveX: -1
+moveY: 1
+progress: warmup
+mirror: true
+  }
+]
+}
+maxAmmo: 40
+ammoPerShot: 2
+consumeAmmoOnce: false
+inaccuracy: 10
+minRange: 20
+ammoTypes: {
+  01-i5-defense-flux-capsule: {
+  type: ArtilleryBulletType
+  collidesAir: true
+  damage: 20
+  splashDamage: 20
+  splashDamageRadius: 6
+  sprite: mine-bullet
+  frontColor: ffffff
+  backColor: 5ffc6e
+  speed: 3
+  drag: 0.02
+  interp: slope
+  shrinkY: 0.4
+  shrinkX: 0.1
+  trailColor: 5ffc6e
+  spin: 2
+  trainInterp: slope
+  fragBullets: 1
+  fragRandomSpread: 0
+  fragBullet: {
+    spawnUnit: defender-unit
+      }
+  collidesTeam: true
+  healAmount: 4
+  hitEffect: {
+    type: MultiEffect
+    effects: [blastExplosion, greenCloud]
+      }
+  shootEffect: shootBigColor
+  despawnEffect: none
+  smokeEffect: circleColorSpark
+  hitColor: 5ffc6e
+    }
+}
+requirements: [
+  01-i1-boron-capsule/150
+  01-i2-molten-research-rune/1
+  01-i5-defense-flux-capsule/20
+  ]
