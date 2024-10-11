@@ -20,6 +20,9 @@ sides: 4
 rotation: 45
   }
   ]
+useUnitCap: false
+createWreck: false
+createScorch: false
 weapons: [
 {
 controllable: false
