@@ -33,3 +33,15 @@ requirements: [
   01-i1-boron-capsule/300
   01-i2-molten-research-rune/3
   ]
+research: {
+  parent: gas-duct
+  objectives: [
+{
+type: OnSector
+preset: 00-s4-tightrope
+}
+]
+}
+researchCost: [
+  01-i2-molten-research-rune/2
+  ]
