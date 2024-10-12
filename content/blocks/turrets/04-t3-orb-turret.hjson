@@ -11,6 +11,7 @@ soundPitchMin: 1
 soundPitchMax: 2
 shootShake: 2
 outlineColor: 2d2f39
+squareSprite: false
 drawer: {
 type: DrawTurret
 basePrefix: molten-
