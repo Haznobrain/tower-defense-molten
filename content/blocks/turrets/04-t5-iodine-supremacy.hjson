@@ -1,6 +1,7 @@
 type: ItemTurret
 reload: 100
 range: 250
+health: 1600
 size: 6
 heatColor: ff0000
 recoil: 4
