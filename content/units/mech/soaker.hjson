@@ -8,6 +8,7 @@ baseRotateSpeed: 2.3
 rotateMoveFirst: true
 outlineColor: 2d2f39
 flying: false
+envDisabled: 0
 weapons: [
 {
 x: 0
