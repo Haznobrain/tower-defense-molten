@@ -1,0 +1,201 @@
+type: ItemTurret
+reload: 100
+range: 250
+size: 6
+heatColor: ff0000
+recoil: 4
+shootSound: largeCannon
+category: turret
+rotateSpeed: 1.9
+shootShake: 8
+shootCone: 20
+soundPitchMin: 1
+soundPitchMax: 2
+drawer: {
+  type: DrawTurret
+  basePrefix: supremacy-
+  parts: [
+    {
+    under: true
+    mirror: true
+    suffix: -pipe
+    progress: warmup
+    heatProgress: {
+      type: recoil
+      other: warmup
+      amount: 0.75
+      op: blend
+        }
+    heatColor: ff0000
+    moveX: 12
+      }
+{
+    under: true
+    mirror: true
+    suffix: -back-pin
+    heatProgress: {
+      type: recoil
+      other: warmup
+      amount: 0.3
+      op: blend
+        }
+    progress: warmup
+    moveY: -2
+    moveX: 4
+    heatColor: ff0000
+      }
+{
+  under: true
+  mirror: true
+  suffix: -back
+  moveY: 2
+  heatColor: ff0000
+    heatProgress: {
+      type: recoil
+      other: warmup
+      amount: 0.3
+      op: blend
+        }
+  progress: recoil
+    }
+{
+under: false
+mirror: true
+suffix: -arm
+moveY: -3
+heatColor: ff0000
+    heatProgress: {
+      type: recoil
+      other: warmup
+      amount: 0.6
+      op: blend
+        }
+progress: recoil
+moveRot: -10
+}
+{
+  type: ShapePart
+  progress: warmup
+  radiusTo: 3
+  color: d3b0ff
+   circle: true
+  hollow: false
+  progress: warmup
+  y: -32
+    }
+{
+  type: HaloPart
+  haloRadiusTo: 16
+  haloRadius: 0
+  radius: 0
+  radiusTo: 3
+  tri: true
+  shapeRotation: 180
+  shapes: 2
+  haloRotation: 90
+  triLength: 0
+  triLengthTo: 8
+  color: d3b0ff
+    }
+  {
+  type: HaloPart
+  haloRadiusTo: 16
+  haloRadius: 0
+  radius: 0
+  radiusTo: 3
+  tri: true
+  shapes: 2
+  haloRotation: 90
+  triLength: 0
+  triLengthTo: 24
+  color: d3b0ff
+    }
+]
+}
+ammoPerShot: 6
+ammoTypes: {
+  01-i1-boron-capsule: {
+    type: BasicBulletType
+    frontColor: ffffff
+    backColor: d3b0ff
+    speed: 3
+    damage: 95
+    pierce: false
+    lifetime: 30
+    trailLength: 20
+    shootEffect: {
+      type: MultiEffect
+      effects: [shootBigColor, shootSmokeTitan]
+        }
+    hitEffect: hitSquaresColor 
+    despawnEffect: hitSquaresColor
+    fragRandomSpread: 0
+    fragAngle: -5
+    fragBullets: 2
+    fragSpread: 10
+    smokeEffect: shootSmokeDisperse
+    hitColor: d3b0ff
+    trailColor: d3b0ff
+    width: 16
+    height: 16
+    shrinkY: 0
+    shrinkX: 0
+    knockback: 10
+    trailParam: 2.5
+    fragBullet: {
+      type: BasicBulletType
+      frontColor: ffffff
+      backColor: d3b0ff
+      trailColor: d3b0ff
+      hitColor: d3b0ff
+      trailLength: 15
+      trailParam: 2
+      speed: 4
+      lifetime: 30
+      damage: 100
+      pierce: true
+      knockback: 5
+      fragOnHit: false
+      pierceCap: 8
+      hitEffect: hitSquaresColor
+      despawnEffect: hitSquaresColor
+      fragBullets: 3
+      fragSpread: 5
+      fragRandomSpread: 0
+      width: 10
+      height: 10
+      fragBullet: {
+        type: BasicBulletType
+        frontColor: ffffff
+        backColor: d3b0ff
+        trailColor: d3b0ff
+        hitColor: d3b0ff
+        speed: 1
+        lifetime: 40
+        hitEffect: hitSquaresColor
+        despawnEffect: hitSquaresColor
+        damage: 40
+        width: 6
+        height: 6
+        trailParam: 1.2
+        trailLength: 30
+        knockback: 2
+          }
+    }
+}
+}
+research: {
+  parent: 04-t1-knocker-turret
+    }
+researchCost: [
+    01-i1-boron-capsule/1200
+    01-i2-molten-research-rune/400
+    01-i3-turret-flux-capsule/400
+    01-i6-solidified-research-rune/5
+    ]
+  requirements: [
+    01-i1-boron-capsule/1200
+    01-i2-molten-research-rune/400
+    01-i3-turret-flux-capsule/400
+    01-i6-solidified-research-rune/5
+    ]
