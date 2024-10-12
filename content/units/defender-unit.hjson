@@ -5,6 +5,7 @@ drag: 3
 accel: 0
 rotateSpeed: 0
 health: 20
+hoverable: false
 hitSize: 20
 flying: false
 lifetime: 120
