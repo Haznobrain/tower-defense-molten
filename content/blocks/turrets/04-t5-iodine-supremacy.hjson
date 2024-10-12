@@ -11,6 +11,7 @@ shootShake: 8
 shootCone: 20
 soundPitchMin: 1
 soundPitchMax: 2
+shootY: 10
 consumes: {
   power: 2
   }
