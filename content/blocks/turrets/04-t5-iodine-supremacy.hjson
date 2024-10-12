@@ -130,7 +130,7 @@ ammoTypes: {
     hitEffect: hitSquaresColor 
     despawnEffect: hitSquaresColor
     fragRandomSpread: 0
-    fragAngle: -5
+    fragAngle: 5
     fragBullets: 2
     fragSpread: 10
     smokeEffect: shootSmokeDisperse
@@ -142,6 +142,8 @@ ammoTypes: {
     shrinkX: 0
     knockback: 10
     trailParam: 2.5
+    fragVelocityMin: 1
+    fragVelocityMax: 1
     fragBullet: {
       type: BasicBulletType
       frontColor: ffffff
@@ -164,6 +166,8 @@ ammoTypes: {
       fragRandomSpread: 0
       width: 10
       height: 10
+      fragVelocityMin: 1
+      fragVelocityMax: 1
       fragBullet: {
         type: BasicBulletType
         frontColor: ffffff
