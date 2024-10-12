@@ -1,0 +1,13 @@
+    sector: 17,
+    planet: "molten-zone"
+    captureWave: 21
+    research: {
+        parent: 00-s3-crossing
+        objectives: [
+          {
+          type: SectorComplete
+          preset: 00-s3-crossing
+          }
+        ]
+          }
+    difficulty: 6
