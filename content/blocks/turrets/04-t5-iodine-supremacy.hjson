@@ -76,12 +76,14 @@ moveRot: -10
 {
   type: ShapePart
   progress: warmup
+  radius: 0
   radiusTo: 3
   color: d3b0ff
    circle: true
   hollow: false
   progress: warmup
   y: -32
+  layer: 110
     }
 {
   type: HaloPart
@@ -96,6 +98,8 @@ moveRot: -10
   triLength: 0
   triLengthTo: 8
   color: d3b0ff
+  y: -32
+  layer: 110
     }
   {
   type: HaloPart
@@ -109,6 +113,8 @@ moveRot: -10
   triLength: 0
   triLengthTo: 24
   color: d3b0ff
+  y: -32
+  layer: 110
     }
 ]
 }
