@@ -12,6 +12,7 @@ shootCone: 20
 soundPitchMin: 1
 soundPitchMax: 2
 shootY: 10
+squareSprite: false
 consumes: {
   power: 2
   }
