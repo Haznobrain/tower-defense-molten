@@ -11,3 +11,5 @@
         ]
           }
     difficulty: 6
+    overrideLaunchDefaults: true
+    addStartingItems: true
