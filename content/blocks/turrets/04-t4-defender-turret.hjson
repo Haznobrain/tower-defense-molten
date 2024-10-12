@@ -9,6 +9,7 @@ shootSound: plasmaBoom
 soundPitchMin: -1
 soundPitchMax: 0
 shootShake: 0.7
+squareSprite: false
 shoot: {
   shots: 3
   shotDelay: 20
