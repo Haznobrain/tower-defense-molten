@@ -11,6 +11,9 @@ shootShake: 8
 shootCone: 20
 soundPitchMin: 1
 soundPitchMax: 2
+consumes: {
+  power: 2
+  }
 drawer: {
   type: DrawTurret
   basePrefix: supremacy-
@@ -163,8 +166,8 @@ ammoTypes: {
       damage: 100
       pierce: true
       knockback: 5
-      fragOnHit: false
-      pierceCap: 8
+      fragOnHit: true
+      pierceCap: 4
       hitEffect: hitSquaresColor
       despawnEffect: hitSquaresColor
       fragBullets: 3
