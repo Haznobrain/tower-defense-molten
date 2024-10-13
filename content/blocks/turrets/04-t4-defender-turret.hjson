@@ -76,6 +76,19 @@ ammoTypes: {
 }
 requirements: [
   01-i1-boron-capsule/150
+  01-i3-turret-flux-capsule/15
   01-i2-molten-research-rune/1
   01-i5-defense-flux-capsule/20
   ]
+researchCost: [
+  molten-research-rune/1
+  ]
+research: {
+  parent: 04-t3-orb-turret
+  objectives: [
+    {
+    type: OnSector
+    preset: 00-s4-tightrope
+  }  
+]
+}
