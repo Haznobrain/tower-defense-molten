@@ -113,8 +113,9 @@ haloRadius: 8
 shapeRotation: 45
 }
     ]
-  damage: 150
+  damage: 175
   pierceArmor: true
+  homingPower: 0.2
   speed: 2
   lifetime: 125
   hitEffect: {
