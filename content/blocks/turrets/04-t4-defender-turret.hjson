@@ -81,7 +81,7 @@ requirements: [
   01-i5-defense-flux-capsule/20
   ]
 researchCost: [
-  molten-research-rune/1
+  01-i2-molten-research-rune/1
   ]
 research: {
   parent: 04-t3-orb-turret
