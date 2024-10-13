@@ -67,7 +67,7 @@ ammoTypes: {
     height: 8
     width: 8
     ammoMultiplier: 8
-    damage: 8
+    damage: 10
     pierce: true
     hitEffect: hitBulletColor
     sprite: towerdefensemolten-04-t2-needle-turret-needle
