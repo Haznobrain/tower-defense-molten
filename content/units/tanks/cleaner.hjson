@@ -6,6 +6,7 @@ shadowElevation: 0.2
 drag: 0.07
 speed: 0.6
 template: ErekirUnitType
+crushDamage: 5
 rotateSpeed: 1.8
 faceTarget: false
 envDisabled: 0
