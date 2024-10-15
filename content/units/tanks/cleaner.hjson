@@ -33,6 +33,7 @@ color: ff0000
 blending: additive
 layer: -1
 outline: false
+suffix: -glow
 }
   {
 type: HoverPart
@@ -76,7 +77,7 @@ rotateSpeed: 1.7
 mirror: false
 cooldownTime: 120
 bullet: {
-  type: ContinuouseFlameBulletType
+  type: ContinuousFlameBulletType
   colors: [e1c9ffaa, dbbeff90, d3b0ff, dfc6ff, ffffffff]
   damage: 37.5
   flareColor: d3b0ff
@@ -93,6 +94,7 @@ suffix: -barrel
 moveX: 2
 moveY: -3
 heatColor: ff0000
+mirror: true
 }
   ]
 }
