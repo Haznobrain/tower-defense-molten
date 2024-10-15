@@ -204,13 +204,13 @@ ammoTypes: {
 research: {
   parent: 04-t1-knocker-turret
     }
-researchCost: [
+requirements: [
     01-i1-boron-capsule/800
     01-i2-molten-research-rune/25
     01-i3-turret-flux-capsule/300
     01-i6-solidified-research-rune/2
     ]
-  requirements: [
+  researchCost: [
     01-i1-boron-capsule/1200
     01-i2-molten-research-rune/400
     01-i3-turret-flux-capsule/400
