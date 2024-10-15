@@ -1,0 +1,96 @@
+type: flying
+flying: false
+engineColor: d3b0ff
+hovering: true
+shadowElevation: 0.2
+drag: 0.07
+speed: 0.6
+rotateSpeed: 1.8
+faceTarget: false
+accel: 0.09
+health: 11000
+armor: 8
+hitSize: 60
+engineOffset: 21
+useEngineElevation: false
+engineSize: 5
+abilities: [
+  {
+  type: MoveEffectAbility
+  x: 0
+  y: -21
+  color: d3b0ff
+  effect: missileTrailShort
+  interval: 12
+  effectParam: 6
+    }
+]
+parts: [
+{
+type: RegionPart
+color: ff0000
+blending: additive
+layer: -1
+outline: false
+}
+  {
+type: HoverPart
+x: 20
+y: 24
+color: d3b0ff
+mirror: true
+radius: 8
+phase: 120
+stroke: 3
+sides: 20
+circles: 3
+  }
+  {
+type: HoverPart
+x: 20
+y: -20
+color: d3b0ff
+mirror: true
+radius: 8
+phase: 120
+stroke: 3
+sides: 20
+circles: 3
+  }
+]
+weapons: [
+{
+name: cleaner-gun
+heatColor: ff0000
+x: 0
+y: 0
+continuous: true
+alwaysContinuous: true
+shadow: 20
+shootSound: torch
+layerOffset: 0.1
+shootY: 6
+rotate: true
+rotateSpeed: 1.7
+mirror: false
+cooldownTime: 120
+bullet: {
+  type: ContinuouseFlameBulletType
+  colors: [e1c9ffaa, dbbeff90, d3b0ff, dfc6ff, ffffffff]
+  damage: 37.5
+  flareColor: d3b0ff
+  length: 80
+  hitColor: d3b0ff
+  lifetime: 80
+  pierceCap: 3
+  width: 8
+    }
+parts: [
+{
+type: RegionPart
+suffix: -barrel
+moveX: 2
+moveY: -3
+heatColor: ff0000
+}
+  ]
