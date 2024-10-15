@@ -1,4 +1,4 @@
-type: flying
+type: tank
 flying: false
 engineColor: d3b0ff
 hovering: true
