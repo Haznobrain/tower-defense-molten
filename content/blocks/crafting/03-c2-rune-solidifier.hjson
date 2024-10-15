@@ -1,0 +1,44 @@
+type: GenericCrafter
+size: 2
+craftTime: 6000
+health: 1200
+hasItems: true
+hasLiquids: false
+hasPower: true
+itemCapacity: 600
+consumes: {
+  power: 1
+  items: {
+    items: [
+    01-i1-boron-capsule/300
+    01-i3-turret-flux-capsule/150
+    01-i4-power-flux-capsule/150
+    01-i2-molten-research-rune/5
+    ]
+  }
+}
+requirements: [
+  01-i1-boron-capsule/1000
+  01-i3-turret-flux-capsule/150
+  01-i4-power-flux-capsule/150
+  01-i2-molten-research-rune/5
+]
+research: 01-c1-core-capsule
+alwaysUnlocked: false
+researchCost
+category: crafting
+outputItem: 01-i6-solidified-research-rune/1
+drawer: {
+  type: DrawMulti
+  drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: ff0000
+suffix: -glow
+glowScale: 10
+}
+]
+}
