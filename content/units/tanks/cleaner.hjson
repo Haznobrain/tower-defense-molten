@@ -36,6 +36,7 @@ outline: false
 suffix: -glow
 }
   {
+layerOffset: -0.001
 type: HoverPart
 x: 20
 y: 24
@@ -49,6 +50,7 @@ circles: 3
   }
   {
 type: HoverPart
+layerOffset: -0.001
 x: 20
 y: -20
 color: d3b0ff
@@ -85,7 +87,7 @@ bullet: {
   hitColor: d3b0ff
   lifetime: 80
   pierceCap: 3
-  width: 8
+  width: 5
     }
 parts: [
 {
@@ -95,6 +97,7 @@ moveX: 2
 moveY: -3
 heatColor: ff0000
 mirror: true
+under: true
 }
   ]
 }
