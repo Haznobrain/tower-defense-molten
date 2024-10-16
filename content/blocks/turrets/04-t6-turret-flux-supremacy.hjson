@@ -10,6 +10,7 @@ soundPitchMin: 2
 soundPitchMax: 3
 inaccuracy: 2
 rotateSpeed: 2.4
+maxAmmo: 160
 category: turret
 shootShake: 0.2
 shootCone: 8
