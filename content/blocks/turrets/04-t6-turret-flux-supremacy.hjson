@@ -239,3 +239,15 @@ ammoTypes: {
           }
       }
 }
+requirements: [
+    01-i1-boron-capsule/1500
+    01-i2-molten-research-rune/50
+    01-i3-turret-flux-capsule/800
+    01-i6-solidified-research-rune/5
+    ]
+researchCost: [
+    01-i1-boron-capsule/1500
+    01-i2-molten-research-rune/500
+    01-i3-turret-flux-capsule/1200
+    01-i6-solidified-research-rune/10
+    ]
