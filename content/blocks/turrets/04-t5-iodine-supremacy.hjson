@@ -203,6 +203,12 @@ ammoTypes: {
 }
 research: {
   parent: 04-t1-knocker-turret
+  objectives: [
+    {
+    type: OnSector
+    preset: 00-s5-reroute
+    }
+    ]
     }
 requirements: [
     01-i1-boron-capsule/800
