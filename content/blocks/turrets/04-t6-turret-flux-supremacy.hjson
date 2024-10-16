@@ -25,8 +25,8 @@ barrels: [
     0, 22, 0,
     5.25, 16, 0
     -5.25, 16, 0
-    20.5, 16.75, 0
-    -20.5, 16.75, 0
+    12.5, 16.75, 0
+    -12.5, 16.75, 0
     ]
   }
 recoils: 5
@@ -184,13 +184,14 @@ ammoTypes: {
     height: 20
     width: 20
     ammoMultiplier: 16
-    damage: 10
+    damage: 25
     pierce: true
     hitEffect: hitBulletColor
     sprite: towerdefensemolten-04-t2-needle-turret-needle
     backSprite: none
     frontColor: b0f7ff
     lightColor: b0f7ff
+    lightningColor: b0f7ff
     trailColor: b0f7ff
     hitColor: b0f7ff
     despawnEffect: none
@@ -232,7 +233,7 @@ ammoTypes: {
         backColor: b0f7ff
         frontColor: b0f7ff
         lightColor: b0f7ff
-        trailWidth: 5
+        trailWidth: 1
         height: 8
         width: 8
         homingPower: 0.1
