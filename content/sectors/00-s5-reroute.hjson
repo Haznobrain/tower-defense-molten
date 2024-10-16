@@ -1,0 +1,15 @@
+    sector: 4,
+    planet: "molten-zone"
+    captureWave: 21
+    research: {
+        parent: 00-s4-tightrope
+        objectives: [
+          {
+          type: SectorComplete
+          preset: 00-s4-tightrope
+          }
+        ]
+          }
+    difficulty: 8
+    overrideLaunchDefaults: true
+    addStartingItems: true
