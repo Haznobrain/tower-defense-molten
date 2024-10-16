@@ -23,6 +23,12 @@ requirements: [
 ]
 research: {
   parent: 01-c1-core-capsule
+  objectives: [
+  {
+type: OnSector
+preset: 00-s5-reroute
+}
+]
     }
 alwaysUnlocked: false
 researchCost: [
