@@ -1,0 +1,85 @@
+type: Tank
+speed: 0.48
+health: 14000
+armor: 6
+hitSize: 58
+template: ErekirUnitType
+outlineColor: 181920
+squareSprite: true
+treadRects: [
+{
+width: 17
+height: 20
+x: -47
+y: 78
+  }
+  {
+width: 21
+height: 20
+x: -81
+y: -100
+  }
+]
+parts: [
+{
+type: RegionPart
+outline: false
+color: ff0000aa
+mixColor: ff0000aa
+blending: additive
+layer: -1
+suffix: -glow
+  }
+  ]
+rotateMoveFirst: true
+rotateSpeed: 1.8
+weapons: [
+{
+name: spearhead-cannon
+reload: 80
+rotateSpeed: 1.5
+x: 0
+y: 0
+mirror: false
+shadow: 16
+shootSound: shootSmite
+soundPitchMin: 3
+soundPitchMax: 4
+rotate: true
+cooldownTime: 60
+recoil: 2
+heatColor: ff0000
+parts: [
+{
+type: RegionPart
+suffix: -barrels
+heatColor: ff0000
+moveY: -8
+progress: reload
+heatProgress: smoothReload
+under: true
+  }
+  ]
+shoot: {
+  type: ShootBarrel
+  shots: 4
+  shotDelay: 1
+  barrels: [
+    4, 19, 0
+    -4, 19, 0
+    6.75, 14, 0
+    -6.75, 14, 0
+        ]
+    }
+bullet: {
+  type: LaserBulletType
+  color: [70a8d4aa, b0f7ff, ffffff]
+  sideAngle: 15
+  damage: 50
+  length: 60
+  width: 15
+  largeHit: true
+  pierceDamageFactor: 0.4
+    }
+}
+]
