@@ -3,7 +3,7 @@ speed: 0.48
 health: 14000
 armor: 6
 hitSize: 58
-template: ErekirUnitType
+template: TankUnitType
 outlineColor: 181920
 squareSprite: true
 treadRects: [
@@ -71,6 +71,7 @@ shoot: {
     -6.75, 14, 0
         ]
     }
+layerOffset: 1
 bullet: {
   type: LaserBulletType
   color: [70a8d4aa, b0f7ff, ffffff]
@@ -81,5 +82,25 @@ bullet: {
   largeHit: true
   pierceDamageFactor: 0.4
     }
+}
+{
+name: spearhead-blade
+y: -2
+x: 18
+reload: 120
+shootSound: torch
+continuous: true
+heatColor: ff0000
+rotate: true
+bullet: {
+  type: ContinuousLaserBulletType
+  colors: [70a8d455, 70a8d4aa, b0f7ff, ffffff]
+  damage: 20
+  length: 60
+  status: electrified
+  hitColor: b0f7ff
+  timeScaleDamage: true
+  }
+rotateSpeed: 1.6
 }
 ]
