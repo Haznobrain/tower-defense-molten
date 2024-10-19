@@ -36,6 +36,7 @@ rotateSpeed: 1.8
 weapons: [
 {
 name: spearhead-cannon
+shootY: 0
 reload: 80
 rotateSpeed: 1.5
 x: 0
@@ -92,12 +93,17 @@ shootSound: torch
 continuous: true
 heatColor: ff0000
 rotate: true
+shootY: 7
+shootX: -2
+alternate: false
 bullet: {
   type: ContinuousLaserBulletType
+  
   colors: [70a8d455, 70a8d4aa, b0f7ff, ffffff]
   damage: 20
   length: 60
   status: electrified
+  width: 6
   hitColor: b0f7ff
   timeScaleDamage: true
   lifetime: 120
