@@ -100,6 +100,7 @@ bullet: {
   status: electrified
   hitColor: b0f7ff
   timeScaleDamage: true
+  lifetime: 120
   }
 rotateSpeed: 1.6
 }
