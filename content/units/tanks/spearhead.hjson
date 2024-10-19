@@ -24,13 +24,14 @@ parts: [
 {
 type: RegionPart
 outline: false
-color: ff0000aa
-mixColor: ff0000aa
+color: b0f7ffaa
+mixColor: b0f7ffaa
 blending: additive
 layer: -1
 suffix: -glow
   }
   ]
+treadFrames: 20
 rotateMoveFirst: true
 rotateSpeed: 1.8
 weapons: [
