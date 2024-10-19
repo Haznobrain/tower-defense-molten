@@ -31,7 +31,7 @@ layer: -1
 suffix: -glow
   }
   ]
-treadFrames: 20
+treadFrames: 10
 rotateMoveFirst: true
 rotateSpeed: 1.8
 weapons: [
