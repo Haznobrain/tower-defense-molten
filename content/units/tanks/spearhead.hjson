@@ -5,6 +5,9 @@ armor: 6
 hitSize: 58
 template: TankUnitType
 outlineColor: 181920
+immunities: [
+burning
+]
 squareSprite: true
 treadRects: [
 {
