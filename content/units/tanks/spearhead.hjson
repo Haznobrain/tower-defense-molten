@@ -96,9 +96,9 @@ rotate: true
 shootY: 7
 shootX: -2
 alternate: false
+layerOffset: 1
 bullet: {
   type: ContinuousLaserBulletType
-  
   colors: [70a8d455, 70a8d4aa, b0f7ff, ffffff]
   damage: 20
   length: 60
