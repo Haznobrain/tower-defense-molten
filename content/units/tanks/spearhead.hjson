@@ -5,6 +5,7 @@ armor: 6
 hitSize: 58
 template: TankUnitType
 outlineColor: 181920
+treadPullOffset: 10
 immunities: [
 burning
 ]
