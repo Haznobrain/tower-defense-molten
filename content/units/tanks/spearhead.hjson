@@ -1,4 +1,4 @@
-type: Tank
+type: tank
 speed: 0.48
 health: 14000
 armor: 6
