@@ -254,3 +254,6 @@ researchCost: [
     01-i3-turret-flux-capsule/1200
     01-i6-solidified-research-rune/10
     ]
+research: {
+    parent: 04-t2-needle-turret
+        }
