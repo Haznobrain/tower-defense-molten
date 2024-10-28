@@ -1,2 +1,3 @@
 color: 5ffc6e
 research: 01-i4-power-flux-capsule
+hiddenOnPlanets: [serpulo, erekir]
