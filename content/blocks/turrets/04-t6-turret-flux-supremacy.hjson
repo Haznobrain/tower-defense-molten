@@ -228,6 +228,7 @@ ammoTypes: {
         speed: 4
         lifetime: 12
         hitEffect: hitBulletColor
+        despawn: hitBulletColor
         hitColor: b0f7ff
         trailColor: b0f7ff
         trailLength: 5
@@ -256,4 +257,10 @@ researchCost: [
     ]
 research: {
     parent: 04-t2-needle-turret
+    objectives: [
+{
+type: OnSector
+preset: 00-s6-gridlock
+}
+]
         }
