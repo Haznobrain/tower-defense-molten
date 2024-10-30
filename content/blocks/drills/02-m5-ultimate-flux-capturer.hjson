@@ -15,6 +15,14 @@ requirements: [
   01-i2-molten-research-rune/15
   01-i6-solidified-research-rune/5
 ]
+researchCost: [
+  01-i1-boron-capsule/500
+  01-i3-turret-flux-capsule/200
+  01-i4-power-flux-capsule/200
+  01-i5-defense-flux-capsule/180
+  01-i2-molten-research-rune/15
+  01-i6-solidified-research-rune/5
+]
 category: production
 results: [
   01-i1-boron-capsule/400
@@ -26,6 +34,12 @@ results: [
 ]
 research:{
   parent: 02-m1-boron-encapsulator
+  objectives: [
+{
+type: OnSector
+preset: 00-s6-gridlock
+}
+]
     }
 drawer: {
 type: DrawMulti
