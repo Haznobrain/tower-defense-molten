@@ -1,0 +1,15 @@
+    sector: 4,
+    planet: "molten-zone"
+    captureWave: 21
+    research: {
+        parent: 00-s5-reroute
+        objectives: [
+          {
+          type: SectorComplete
+          preset: 00-s5-reroute
+          }
+        ]
+          }
+    difficulty: 8
+    overrideLaunchDefaults: true
+    addStartingItems: true
