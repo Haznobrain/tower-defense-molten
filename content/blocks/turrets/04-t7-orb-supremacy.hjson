@@ -202,7 +202,8 @@ shootType: {
     hitEffect: {
       type: MultiEffect
       effects: [titanExplosion, titanSmoke
-        }
+        ]
+}
     hitColor: fffb84
     despawnEffect: none
     despawnHit: true
