@@ -7,6 +7,7 @@ shootY: 12
 category: turret
 shootSound: instDeath
 recoil: 4
+shootCone: 2
 shootShake: 15
 outlineColor: 2d2f39
 squareSprite: false
