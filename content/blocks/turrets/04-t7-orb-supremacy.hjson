@@ -10,6 +10,8 @@ recoil: 4
 shootShake: 15
 outlineColor: 2d2f39
 squareSprite: false
+minWarmup: 0.96
+shootWarmupSpeed: 0.02
 drawer: {
   type: DrawTurret
   basePrefix: supremacy-
@@ -144,7 +146,7 @@ consumes: {
     }
 shootType: {
   type: BulletType
-  damage: 950
+  damage: 1800
   shootEffect: {
     type: MultiEffect
     effects: [shootTitan, {
