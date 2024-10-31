@@ -119,6 +119,7 @@ color: fffb84
 layer: 100
 haloRadius: 12
 radius: 3
+mirror: true
 }
 {
 type: HaloPart
@@ -133,6 +134,7 @@ color: fffb84
 layer: 100
 haloRadius: 12
 radius: 3
+mirror: true
 }
 ]
 }
