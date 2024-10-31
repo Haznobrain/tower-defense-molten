@@ -1,0 +1,268 @@
+type: PowerTurret
+reload: 420
+range: 492
+size: 6
+rotateSpeed: 1.6
+shootY: 12
+category: turret
+shootSound: instDeath
+recoil: 4
+shootShake: 15
+outlineColor: 2d2f39
+squareSprite: false
+drawer: {
+  type: DrawTurret
+  basePrefix: supremacy-
+  parts: [
+  {
+    type: RegionPart
+    suffix: -middle
+    heatColor: ff0000
+    progress: recoil
+    heatProgress: heat
+    moveY: -6
+      }
+{
+    type: RegionPart
+    suffix: -side
+    heatColor: ff0000
+    progress: recoil
+    mirror: true
+    moves: [
+{
+type: PartMove
+rot: 5
+progress: warmup
+}
+      ]
+    moveY: -8
+    moveX: 4
+    moveRot: -10
+    heatProgress: heat
+    children: [
+  {
+    type: RegionPart
+    suffix: -side-cover1
+    moveY: -2
+          mirror: true
+    progress: {
+        type: warmup
+        op: delay
+        amount: 0.5
+          }
+      }
+  {
+  type: RegionPart
+  suffix: -side-cover2
+  moveY: 2
+  moveX: 2
+        mirror: true
+    }
+    ]
+  }
+      {
+type: RegionPart
+suffix: -bottom1
+    }
+{
+type: RegionPart
+suffix: -crystal
+mirror: true
+heatColor: ff4b4b
+moveY: -4
+moveX: -4
+moves: [
+  {
+  type: PartMove
+  progress: recoil
+  y: 4
+  x: 4
+    }
+]
+  progress: warmup
+  heatProgress: {
+     type: recoil
+      op: blend
+      other: warmup
+      amount: 0.2
+       }
+}
+{
+type: RegionPart
+suffix: -bottom-top
+}
+{
+type: ShapePart
+y: -4
+x: 24
+radius: 8
+circle: true
+hollow: true
+color: fffb84
+mirror: true
+stroke: 2
+layer: 100
+  }
+{
+type: HaloPart
+y: -4
+x: 24
+tri: true
+shapes: 2
+triLength: 0
+triLengthTo: 2
+shapeRotation: 180
+color: fffb84
+layer: 100
+haloRadius: 12
+radius: 3
+}
+{
+type: HaloPart
+y: -4
+x: 24
+tri: true
+shapes: 2
+triLength: 0
+triLengthTo: 12
+shapeRotation: 0
+color: fffb84
+layer: 100
+haloRadius: 12
+radius: 3
+}
+]
+}
+consumes: {
+  power: 10
+  items: [
+      01-i4-power-flux-capsule/5
+      ]
+  liquids: [
+      slag/0.2
+    ]
+    }
+shootType: {
+  type: BulletType
+  damage: 950
+  shootEffect: {
+    type: MultiEffect
+    effects: [shootTitan, {
+      type: WaveEffect
+      sizeTo: 120
+      lifetime: 12
+      strokeFrom: 16
+      strokeTo: 0
+      colorFrom: fffb84
+      colorTo: fffb84
+        }
+      {
+        type: ParticleEffect
+        sizeFrom: 8
+        sizeTo: 0
+        colorFrom: fffb84
+        colorTo: a2a2a2aa
+        lifetime: 80
+        interp: pow5Out
+        sizeInterp: pow5In
+        particles: 8
+        length: 40
+        cone: 10
+          }
+      {
+        type: ParticleEffect
+        sizeFrom: 5
+        particles: 14
+        sizeTo: 0
+        colorFrom: fffb84
+        colorTo: a2a2a2aa
+        lifetime: 80
+        interp: pow5Out
+        sizeInterp: pow5In
+        length: 41
+        cone: 10
+          }
+{
+        type: ParticleEffect
+        lenFrom: 6
+        lenTo: 0
+        strokeFrom: 12
+        strokeTo: 0
+        colorFrom: fffb84
+        colorTo: fffb84
+        lifetime: 40
+        length: 40
+        interp: pow10Out
+        sizeInterp: pow10In
+        cone: 10
+          }
+      ]
+  }
+    smokeEffect: none
+    hitEffect: {
+      type: MultiEffect
+      effects: [titanExplosion, titanSmoke
+        }
+    hitColor: fffb84
+    despawnEffect: none
+    despawnHit: true
+    parts: [
+{
+type: HaloPart
+shapes: 30
+haloRadius: 12
+radius: 6
+color: fffb84
+layer: 100
+}
+      ]
+    pierceDamageFactor: 0.8
+    pierce: true
+    speed: 15
+    lifetime: 32.8
+    hitSize: 12
+    bulletInterval: 1
+    intervalBullets: 5
+    intervalBullet: {
+        type: BasicBulletType
+        sprite: mine-bullet
+        backColor: fffb84
+        frontColor: ffffff
+        shrinkX: 0
+        shrinkY: 0
+        damage: 10
+        hitEffect: {
+          type: WrapEffect
+          color: fffb84
+          effect: dynamicSpikes
+          rotation: 6
+            }
+        despawnSound: plasmaBoom
+        hitSound: plasmaBoom
+        lifetime: 400
+        despawnHit: true
+        speed: 4
+        drag: 0.05
+          }
+  trailInterval: 0.1
+  trailEffect: disperseTrail
+  trailColor: fffb84
+    }
+
+requirements: [
+    01-i1-boron-capsule/2000
+    01-i2-molten-research-rune/80
+    01-i3-turret-flux-capsule/600
+    01-i4-power-flux-capsule/1000
+    01-i6-solidified-research-rune/20
+    ]
+researchCost: [
+    01-i1-boron-capsule/4000
+    01-i2-molten-research-rune/200
+    01-i3-turret-flux-capsule/1000
+    01-i4-power-flux-capsule/2000
+    01-i6-solidified-research-rune/50
+    ]
+research: 04-t3-orb-turret
+itemCapacity: 50
+hasItems: true
