@@ -29,14 +29,16 @@ faceTarget: false
 weapons: [
 {
 //glow weapon
-minWarmup: 60
-shootWarmupSpeed: 1
+minWarmup: 0.60
+shootWarmupSpeed: 0.01
 linearWarmup: true
 parts: [
 {
 name: towerdefensemolten-enlighten-glow
 colorFrom: ff000000
 colorTo: ff0000aa
+mixColorFrom: ff000000
+mixColorTo: ff0000aa
 progress: warmup
   }
   ]
