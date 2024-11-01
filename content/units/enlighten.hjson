@@ -35,9 +35,9 @@ linearWarmup: true
 parts: [
 {
 name: towerdefensemolten-enlighten-glow
-colorFrom: ff000000
+color: ff000000
 colorTo: ff0000aa
-mixColorFrom: ff000000
+mixColor: ff000000
 mixColorTo: ff0000aa
 progress: warmup
 outline: false
