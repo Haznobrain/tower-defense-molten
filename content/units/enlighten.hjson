@@ -40,16 +40,19 @@ colorTo: ff0000aa
 mixColorFrom: ff000000
 mixColorTo: ff0000aa
 progress: warmup
+outline: false
+blending: additive
   }
   ]
 reload: 1
 shootSound: none
 mirror: false
 x: 0
+recoil: 0
 y: 0
-alwaysShooting: true
 display: false
 minShootVelocity: 0.7
+controllable: false
 bullet: {
   type: BulletType
   lifetime: 0
