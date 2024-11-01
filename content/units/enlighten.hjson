@@ -10,6 +10,7 @@ rotateSpeed: 2.1
 engineOffset: 12
 engineSize: 20
 engineColor: fffb84
+template: ErekirUnitType
 engines: [
 {
 radius: 8
