@@ -52,6 +52,8 @@ recoil: 0
 y: 0
 display: false
 minShootVelocity: 0.7
+ignoreRotation: true
+autoTarget: true
 controllable: false
 bullet: {
   type: BulletType
@@ -76,7 +78,7 @@ bullet: {
   shootSound: blaster
   bullet: {
     type: BombBulletType
-    splashDamage: 20
+    splashDamage: 35
     splashDamageRadius: 10
     hitEffect: blastExplosion
     width: 6
@@ -85,6 +87,7 @@ bullet: {
     frontColor: ffffff
     backColor: fffb84
     lifetime: 900
+    collides: true
       }
 }
 {
@@ -99,7 +102,7 @@ bullet: {
   shootSound: blaster
   bullet: {
     type: BombBulletType
-    splashDamage: 25
+    splashDamage: 70
     splashDamageRadius: 20
     hitEffect: blastExplosion
     width: 10
@@ -108,6 +111,7 @@ bullet: {
     frontColor: ffffff
     backColor: fffb84
     lifetime: 100
+    collides: true
       }
 }
 ]
