@@ -1,0 +1,107 @@
+type: flying
+speed: 1.3333333333333333333333333333333333333333333333333333
+drag: 0.08
+accel: 0.08
+health: 8500
+armor: 20
+flying: true
+lowAltitude: false
+rotateSpeed: 2.1
+engineOffset: 12
+engineSize: 20
+engineColor: fffb84
+engines: [
+{
+radius: 8
+x: 28
+y: -10
+}
+  {
+radius: 8
+x: -28
+y: -10
+}
+]
+range: 160
+circleTarget: true
+faceTarget: false
+weapons: [
+{
+//glow weapon
+minWarmup: 60
+shootWarmupSpeed: 1
+linearWarmup: true
+parts: [
+{
+name: towerdefensemolten-enlighten-glow
+colorFrom: ff000000
+colorTo: ff0000aa
+progress: warmup
+  }
+  ]
+reload: 1
+shootSound: none
+mirror: false
+x: 0
+y: 0
+alwaysShooting: true
+display: false
+minShootVelocity: 0.7
+bullet: {
+  type: BulletType
+  lifetime: 0
+  shootEffect: none
+  smokeEffect: none
+  despawnEffect: none
+  rangeOverride: 160
+  hitEffect: none
+    }
+}
+  {
+  reload: 5
+  y: 0
+  xRand: 12
+  mirror: false
+  x: 0
+  top: false
+  ignoreRotation: true
+  shootCone: 360
+  minShootVelocity: 0.7
+  shootSound: blaster
+  bullet: {
+    type: BombBulletType
+    splashDamage: 20
+    splashDamageRadius: 10
+    hitEffect: blastExplosion
+    width: 6
+    height: 6
+    sprite: mine-bullet
+    frontColor: ffffff
+    backColor: fffb84
+    lifetime: 900
+      }
+}
+{
+  reload: 5
+  y: 0
+  x: 16
+  alternate: true
+  top: false
+  ignoreRotation: true
+  shootCone: 360
+  minShootVelocity: 0.7
+  shootSound: blaster
+  bullet: {
+    type: BombBulletType
+    splashDamage: 25
+    splashDamageRadius: 20
+    hitEffect: blastExplosion
+    width: 10
+    height: 10
+    sprite: mine-bullet
+    frontColor: ffffff
+    backColor: fffb84
+    lifetime: 100
+      }
+}
+]
