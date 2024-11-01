@@ -11,6 +11,7 @@ engineOffset: 12
 engineSize: 20
 engineColor: fffb84
 template: ErekirUnitType
+hitSize: 32
 engines: [
 {
 radius: 8
