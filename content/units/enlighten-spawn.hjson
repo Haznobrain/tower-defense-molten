@@ -32,8 +32,8 @@ parts: [
   name: towerdefensemolten-enlighten
   xScl: 0.01
   yScl: 0.01
-  growX: 100
-  growY: 100
+  growX: 1
+  growY: 1
   growProgress: life
   colorFrom: faff60aa
   colorTo: faff6000
@@ -54,7 +54,7 @@ deathExplosionEffect: {
   radiusTo: 8192
   strokeFrom: 16
   strokeTo: 0
-  lifetime: 900
+  lifetime: 200
   colorFrom: faff60
   colorTo: faff60
     }
