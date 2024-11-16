@@ -1,0 +1,61 @@
+type: missile
+drawBody: false
+drawCell: false
+speed: 0
+rotateSpeed: 360
+hidden: false
+template: MissileUnitType
+controller: FlyingAI
+defaultController: FlyingAI
+hittable: false
+targetable: false
+hitSize: 18
+lifetime: 420
+outlines: false
+range: 8192
+maxRange: 8192
+engineSize: 0
+parts: [
+  {
+  type: FlarePart
+  stroke: 3
+  strokeTo: 3
+  length: 24
+  lengthTo: 0
+  color1: faff60
+  color2: faff60
+  progress: life
+  followRotation: false
+    }
+{
+  type: RegionPart
+  name: towerdefensemolten-enlighten
+  xScl: 0.01
+  yScl: 0.01
+  growX: 100
+  growY: 100
+  growProgress: life
+  colorFrom: faff60aa
+  colorTo: faff6000
+  mixColorFrom: faff60aa
+  mixColorTo: 000000ff
+  progress: life
+    }
+]
+abilities: [
+{
+type: SpawnDeathAbility
+unit: enlighten
+spread: 1
+  }
+  ]
+deathExplosionEffect: {
+  Type: WaveEffect
+  radiusTo: 8192
+  strokeFrom: 16
+  strokeTo: 0
+  lifetime: 900
+  colorFrom: faff60
+  colorTo: faff60
+    }
+deathSound: Wave
