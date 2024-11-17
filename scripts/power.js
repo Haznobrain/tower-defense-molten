@@ -1,8 +1,8 @@
 Events.on(ClientLoadEvent, () => {
   let block = Vars.content.getByName(ContentType.block, "towerdefensemolten-06-p3-variation-generator");
-  block.buildType = () => extend(PowerGenerator.GeneratorBuild, block, {
+  block.buildType = () => extend(ConsumeGenerator.ConsumeGeneratorBuild, block, {
     getPowerProduction(){
-      return Mathf.absin(120, 10); 
+      return warmup*Mathf.absin(120, 10); 
     }
   });
 });
