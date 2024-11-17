@@ -1,0 +1,88 @@
+type: ConsumeGenerator
+health: 1200
+itemDuration: 60
+itemCapacity: 20
+liquidCapacity: 200
+outputLiquid: slag/0.4
+explodeOnFull: false
+ignoreLiquidFullness: true
+explosionRadius: 6
+explosionDamage: 800
+explodeSound: largeExplosion
+category: power
+powerProduction: 10
+squareSprite: false
+explosivity: 1
+explodeEffect: {
+  type: MultiEffect
+  effects: [
+{
+type: WaveEffect
+lifetime: 10
+sizeTo: 48
+strokeFrom: 6
+colorTo: fffb84
+}
+    {
+type: ParticleEffect
+particles: 16
+line: true
+lifetime: 30
+length: 48
+lenFrom: 6
+interp: circleOut
+sizeInterp: pow5In
+colorTo: fffb84
+  }
+{
+type: ParticleEffect
+particles: 20
+sizeFrom: 6
+colorFrom: fffb84aa
+colorTo: fffb84aa
+lightColor: fffb84
+lifetime: 180
+interp: pow10Out
+sizeInterp: pow5In
+  }
+]
+}
+explosionPuddleLiquid: slag
+explosionPuddleAmount: 40
+size: 2
+consumes: {
+  items: [
+      01-i4-power-flux-capsule/2
+    ]
+    }
+drawer: {
+type: DrawMulti
+drawers: [
+  {
+type: DrawDefault
+  }
+{
+type: DrawArcSmelt
+flameColor: fffb84
+midColor: fffb84
+  }
+]
+}
+research: {
+  parent: 06-p1-flux-generator
+  objectives: [
+    {
+    type: SectorComplete
+    preset: 00-s6-gridlock
+    }
+    ]
+    }
+researchCost: [
+  01-i2-molten-research-rune/1
+  01-i6-solidified-research-rune/1
+  ]
+requirements: [
+  01-i1-boron-capsule/450
+  01-i4-power-flux-capsule/300
+  01-i6-solidified-research-rune/1
+  ]
