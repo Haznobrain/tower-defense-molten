@@ -191,6 +191,8 @@ fragBullet: {
     speed: 10
     hitSize: 10
     lifetime: 8
+    pierce: true
+    pierceBuilding: true
     }
 }
 }
