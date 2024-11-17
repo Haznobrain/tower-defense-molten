@@ -20,7 +20,7 @@ abilities: [
   angleOffset: 270
   whenShooting: false
   width: 10
-  drawArc: true
+  drawArc: false
   //will set to false once i'm sure it's correct size
   max: 100000
   regen: 100000
@@ -34,7 +34,7 @@ abilities: [
   angleOffset: 90
   whenShooting: false
   width: 10
-  drawArc: true
+  drawArc: false
   //will set to false once i'm sure it's correct size
   max: 100000
   regen: 100000
@@ -53,8 +53,127 @@ outline: false
   type: RegionPart
   suffix: -shield
   layer: 125
-  color: 5ffc6ecc
-  mixColor: 5ffc6ecc
+  color: b5ffbccc
+  mixColor: b5ffbccc
   outline: false
     }
+]
+weapons: [
+{
+name: castle-gun
+x: 29.25
+y: -1.25
+reload: 120
+shoot: {
+  shots: 8
+  shotDelay: 2
+  }
+inaccuracy: 20
+recoil: 3
+shootSound: shotgun
+soundPitchMin: -4
+soundPitchMax: -2
+rotate: true
+rotateSpeed: 1.6
+rotationLimit: 15
+bullet: {
+  type: BasicBulletType
+  damage: 60
+  parts: [
+    {
+    type: FlarePart
+    length: 4
+    lengthTo: 12
+    progress: {
+      type: life
+      op: curve
+      interp: circleOut
+      }
+    }
+    ]
+  sprite: mine-bullet
+  height: 30
+  width: 30
+  shrinkX: 0
+  shrinkY: 0
+  speed: 3
+  lifetime: 50
+  hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: WaveEffect
+        sizeTo: 45
+        colorFrom: b5ffbc
+        colorTo: b5ffbc
+        lifetime: 12
+        strokeFrom: 10
+        }
+        {  
+        type: ParticleEffect
+        colorFrom: b5ffbc
+        colorTo: 5ffc6eaa
+        interp: circleOut
+        sizeInterp: pow10In
+        particles: 12
+        length: 45
+        lifetime: 70
+        }
+        {
+        type: ParticleEffect
+        line: true
+        colorFrom: b5ffbc
+        colorTo: 5ffc6eaa
+        lenFrom: 8
+        lenTo: 2
+        strokeFrom: 1
+        strokeTo: 0
+        lifetime: 50
+        length: 45
+        interp: pow10Out
+        sizeInterp: pow5In
+        randLength: false
+        }
+        {  
+        type: ParticleEffect
+        colorFrom: b5ffbc
+        colorTo: a2a2a2aa
+        interp: circleOut
+        sizeInterp: pow10In
+        particles: 12
+        length: 80
+        lifetime: 80
+        cone: 40
+        }
+        {
+        type: ParticleEffect
+        line: true
+        colorFrom: b5ffbc
+        colorTo: 5ffc6eaa
+        lenFrom: 8
+        lenTo: 2
+        strokeFrom: 1
+        strokeTo: 0
+        lifetime: 50
+        length: 80
+        interp: pow10Out
+        sizeInterp: pow5In
+        randLength: true
+        cone: 40
+        }
+        ]
+      }
+fragBullets: 10
+fragRandomSpread: 40
+fragBullet: {
+    type: BulletType
+    hitEffect: none
+    damage: 5
+    despawnEffect: none
+    speed: 10
+    hitSize: 10
+    lifetime: 8
+    }
+}
+}
 ]
