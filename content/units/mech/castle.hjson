@@ -53,8 +53,8 @@ outline: false
   type: RegionPart
   suffix: -shield
   layer: 125
-  color: b5ffbccc
-  mixColor: b5ffbccc
+  color: b5ffbcff
+  mixColor: b5ffbcff
   outline: false
     }
 ]
