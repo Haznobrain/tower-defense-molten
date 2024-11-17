@@ -63,6 +63,16 @@ weapons: [
 name: castle-gun
 x: 29.25
 y: -1.25
+parts: [
+{
+  type: RegionPart
+suffix: -glow
+color: b5ffbcaa
+mixColor: b5ffbcaa
+blending: additive
+outline: false
+}
+]
 reload: 120
 shoot: {
   shots: 8
@@ -82,8 +92,8 @@ bullet: {
   parts: [
     {
     type: FlarePart
-    radius: 4
-    radiusTo: 12
+    radius: 12
+    radiusTo: 20
     color1: b5ffbc
     color2: ffffff
     progress: {
@@ -93,6 +103,8 @@ bullet: {
       }
     }
     ]
+  frontColor: ffffff
+  backColor: b5ffbc
   sprite: mine-bullet
   height: 30
   width: 30
