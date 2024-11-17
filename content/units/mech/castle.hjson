@@ -1,0 +1,60 @@
+type: mech
+hitSize: 40
+stepShake: 5
+speed: 0.213
+health: 22000
+armor: 50
+rotateSpeed: 1.4
+baseRotateSpeed: 1.3
+rotateMoveFirst: true
+outlineColor: 181920
+flying: false
+envDisabled: 0
+abilities: [
+  {
+  type: ShieldArcAbility
+  radius: 40
+  x: 40
+  y: 0
+  angle: 90
+  angleOffset: 270
+  whenShooting: false
+  width: 10
+  drawArc: true
+  //will set to false once i'm sure it's correct size
+  max: 100000
+  regen: 100000
+    }
+  {
+  type: ShieldArcAbility
+  radius: 40
+  x: -40
+  y: 0
+  angle: 90
+  angleOffset: 90
+  whenShooting: false
+  width: 10
+  drawArc: true
+  //will set to false once i'm sure it's correct size
+  max: 100000
+  regen: 100000
+    }
+]
+parts: [
+{
+  type: RegionPart
+suffix: -glow
+color: b5ffbcaa
+mixColor: b5ffbcaa
+blending: additive
+outline: false
+}
+  {
+  type: RegionPart
+  suffix: -shield
+  layer: 125
+  color: 5ffc6eaa
+  mixColor: 5ffc6e
+  outline: false
+    }
+]
