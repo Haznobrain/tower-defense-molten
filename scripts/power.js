@@ -1,5 +1,6 @@
 Events.on(ClientLoadEvent, () => {
-  Vars.content.getByName(ContentType.block, "towerdefensemolten-06-p3-variation-generator").buildType = () => extend(PowerGenerator.GeneratorBuild, {
+  let block = Vars.content.getByName(ContentType.block, "modname-name");
+  block.buildType = () => extend(PowerGenerator.GeneratorBuild, block, {
     getPowerProduction(){
       return Mathf.absin(120, 600); 
     }
