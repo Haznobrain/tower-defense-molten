@@ -82,8 +82,10 @@ bullet: {
   parts: [
     {
     type: FlarePart
-    length: 4
-    lengthTo: 12
+    radius: 4
+    radiusTo: 12
+    color1: b5ffbc
+    color2: ffffff
     progress: {
       type: life
       op: curve
