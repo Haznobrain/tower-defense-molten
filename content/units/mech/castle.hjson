@@ -81,7 +81,9 @@ shoot: {
 inaccuracy: 20
 recoil: 3
 shootSound: shotgun
-shootY: 27
+shootY: 25
+shootEffect: shootBigColor
+smokeEffect: shootSmokeTitan
 soundPitchMin: -4
 soundPitchMax: -2
 rotate: true
