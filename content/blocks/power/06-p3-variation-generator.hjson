@@ -1,6 +1,6 @@
 type: ConsumeGenerator
 health: 1200
-itemDuration: 60
+itemDuration: 80
 itemCapacity: 20
 liquidCapacity: 200
 outputLiquid: slag/0.4
