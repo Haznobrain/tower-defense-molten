@@ -14,7 +14,7 @@ abilities: [
   {
   type: ShieldArcAbility
   radius: 40
-  x: 40
+  x: 80
   y: 0
   angle: 90
   angleOffset: 270
@@ -28,7 +28,7 @@ abilities: [
   {
   type: ShieldArcAbility
   radius: 40
-  x: -40
+  x: -80
   y: 0
   angle: 90
   angleOffset: 90
@@ -53,8 +53,8 @@ outline: false
   type: RegionPart
   suffix: -shield
   layer: 125
-  color: 5ffc6eaa
-  mixColor: 5ffc6e
+  color: 5ffc6ecc
+  mixColor: 5ffc6ecc
   outline: false
     }
 ]
