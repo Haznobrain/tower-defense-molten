@@ -81,6 +81,7 @@ shoot: {
 inaccuracy: 20
 recoil: 3
 shootSound: shotgun
+shootY: 27
 soundPitchMin: -4
 soundPitchMax: -2
 rotate: true
