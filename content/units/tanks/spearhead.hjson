@@ -83,7 +83,7 @@ bullet: {
   color: [70a8d4aa, b0f7ff, ffffff]
   sideAngle: 15
   damage: 50
-  length: 60
+  length: 120
   width: 15
   largeHit: true
   pierceDamageFactor: 0.4
