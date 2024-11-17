@@ -89,6 +89,7 @@ soundPitchMax: -2
 rotate: true
 rotateSpeed: 1.6
 rotationLimit: 15
+layerOffset: -1
 bullet: {
   type: BasicBulletType
   damage: 60
