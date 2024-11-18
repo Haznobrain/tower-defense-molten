@@ -88,7 +88,8 @@ soundPitchMin: -4
 soundPitchMax: -2
 rotate: true
 rotateSpeed: 1.6
-rotationLimit: 15
+rotationLimit: 30
+shootCone: 20
 layerOffset: -1
 bullet: {
   type: BasicBulletType
