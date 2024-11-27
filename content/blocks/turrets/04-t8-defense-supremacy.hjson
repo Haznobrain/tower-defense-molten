@@ -5,7 +5,8 @@ shootWarmupSpeed: 0.04
 minWarmup: 0.96
 shootSound: beam
 range: 250
-loopSound: spellLoop
+loopSound: beam
+loopSoundVolume: 2
 hasPower: true
 heatColor: ff0000
 targetHeal: true
@@ -37,7 +38,7 @@ drawer: {
   suffix: -cover1
   mirror: true
   moveY: -2
-  moveX: -4
+  moveX: 4
   heatColor: ff0000
   progress: warmup
   heatProgress: recoil
@@ -79,9 +80,10 @@ shootType: {
         strokeTo: 0
         colorTo: 5ffc6e
           }
+      intervalRandomSpread: 0
       despawnEffect: none
       colors: [5ffc6eaa, 5ffc6e, b5ffbc, ffffff]
-      bulletInterval: 60
+      bulletInterval: 50
       intervalBullet: {
         spawnUnit: sup-shield
           }
