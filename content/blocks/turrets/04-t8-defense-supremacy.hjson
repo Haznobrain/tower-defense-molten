@@ -10,6 +10,7 @@ hasPower: true
 heatColor: ff0000
 targetHeal: true
 recoil: 0
+health: 3500
 drawer: {
   type: DrawTurret
   basePrefix: supremacy-
@@ -66,6 +67,8 @@ shootType: {
       length: 250
       width: 6
       lifetime: 40
+      healPercent: 1
+      collidesTeam: true
       hitEffect: {
         type: ParticleEffect
         line: true
