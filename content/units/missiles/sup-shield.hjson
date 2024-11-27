@@ -2,7 +2,7 @@ type: missile
 template: MissileUnitType
 hitSize: 0
 speed: 0
-lifetime: 60
+lifetime: 120
 controller: MissileAI
 accel: 0
 rotateSpeed: 2.4
