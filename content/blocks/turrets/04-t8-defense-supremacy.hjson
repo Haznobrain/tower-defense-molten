@@ -10,7 +10,7 @@ loopSoundVolume: 2
 hasPower: true
 heatColor: ff0000
 category: turret
-targetHeal: true
+targetHealing: true
 recoil: 0
 health: 3500
 drawer: {
@@ -71,6 +71,7 @@ shootType: {
       lifetime: 40
       healPercent: 1
       collidesTeam: true
+      incendAmount: 0
       hitEffect: {
         type: ParticleEffect
         line: true
