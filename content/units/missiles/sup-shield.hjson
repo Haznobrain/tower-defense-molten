@@ -1,0 +1,37 @@
+type: missile
+template: MissileUnitType
+hitSize: 0
+speed: 0
+lifetime: 60
+controller: MissileAI
+accel: 0
+rotateSpeed: 2.4
+hoverable: false
+flying: true
+hittable: false
+targetable: false
+engineSize: 0
+deathExplosionEffect: none
+deathSound: none
+abilities: [
+{
+type: ShieldArcAbility
+angle: 90
+radius: 30
+whenShooting: false
+max: 10000
+regen: 1000
+}
+  ]
+useUnitCap: false
+createWreck: false
+createScorch: false
+weapons: [
+{
+controllable: false
+aiControllable: false
+shootOnDeath: true
+hidden: true
+drawBody: false
+drawCell: false
+physics: false
