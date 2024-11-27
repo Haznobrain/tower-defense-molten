@@ -1,0 +1,97 @@
+type: ContinuousTurret
+size: 6
+rotateSpeed: 2.4
+shootWarmupSpeed: 0.04
+minWarmup: 0.96
+shootSound: beam
+range: 250
+loopSound: spellLoop
+hasPower: true
+heatColor: ff0000
+targetHeal: true
+recoil: 0
+drawer: {
+  type: DrawTurret
+  basePrefix: supremacy-
+  parts: [
+    {
+    suffix: -side
+    mirror: true
+    moveX: -3
+    moveY: 1
+    heatColor: ff0000
+    progress: warmup
+    heatProgress: recoil
+    }
+{
+  suffix: -bottom
+  mirror: false
+  moveX: 0
+  moveY: 0
+  heatColor: ff0000
+  progress: recoil
+  heatProgress: recoil
+    }
+{
+  suffix: -cover1
+  mirror: true
+  moveY: -2
+  moveX: -4
+  heatColor: ff0000
+  progress: warmup
+  heatProgress: recoil
+    }
+{
+  suffix: -cover2
+  mirror: true
+  moveY: -0.5
+  moveX: 0.5
+  progress: warmup
+    }
+]
+}
+consumes: {
+  power: 5
+  items: [
+    01-i5-defense-flux-capsule/5
+    ]
+    }
+ammoPerShot: 5
+firingMoveFract: 0
+shootY: 4
+shootType: {
+      type: ContinuousLaserBulletType
+      damage: 80
+      pierceArmor: true
+      length: 250
+      width: 6
+      lifetime: 40
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        len: 4
+        stroke: 8
+        lifetime: 24
+        lenTo: 0
+        strokeTo: 0
+        colorTo: 5ffc6e
+          }
+      despawnEffect: none
+      colors: [5ffc6eaa, 5ffc6e, b5ffbc, ffffff]
+      bulletInterval: 60
+      intervalBullet: {
+        spawnUnit: sup-shield
+          }
+}
+requirements: [
+  01-i1-boron-capsule/2100
+  01-i2-molten-research-rune/50
+  01-i3-turret-flux-capsule/500
+  01-i4-power-flux-capsule/500
+  01-i5-defense-flux-capsule/1000
+  01-i6-solidified-research-rune/20
+  ]
+researchCost: [
+      01-i6-solidified-research-rune/50
+      ]
+research: 04-t4-defender-turret
