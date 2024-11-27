@@ -9,7 +9,7 @@ loopSound: beam
 loopSoundVolume: 2
 hasPower: true
 heatColor: ff0000
-category: turrets
+category: turret
 targetHeal: true
 recoil: 0
 health: 3500
