@@ -26,8 +26,6 @@ regen: 1000
 useUnitCap: false
 createWreck: false
 createScorch: false
-weapons: [
-{
 controllable: false
 aiControllable: false
 shootOnDeath: true
