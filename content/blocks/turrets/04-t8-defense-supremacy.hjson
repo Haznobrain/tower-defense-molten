@@ -24,7 +24,7 @@ drawer: {
     moveY: 1
     heatColor: ff0000
     progress: warmup
-    heatProgress: recoil
+    heatProgress: warmup
     }
 {
   suffix: -bottom
@@ -33,7 +33,7 @@ drawer: {
   moveY: 0
   heatColor: ff0000
   progress: recoil
-  heatProgress: recoil
+  heatProgress: warmup
     }
 {
   suffix: -cover1
@@ -42,7 +42,7 @@ drawer: {
   moveX: 4
   heatColor: ff0000
   progress: warmup
-  heatProgress: recoil
+  heatProgress: warmup
     }
 {
   suffix: -cover2
