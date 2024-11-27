@@ -103,8 +103,8 @@ bullet: {
   shootSound: blaster
   bullet: {
     type: BombBulletType
-    splashDamage: 70
-    splashDamageRadius: 20
+    splashDamage: 190
+    splashDamageRadius: 40
     hitEffect: blastExplosion
     width: 10
     height: 10
