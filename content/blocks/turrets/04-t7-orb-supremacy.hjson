@@ -263,12 +263,8 @@ requirements: [
     01-i6-solidified-research-rune/20
     ]
 researchCost: [
-    01-i1-boron-capsule/4000
-    01-i2-molten-research-rune/200
-    01-i3-turret-flux-capsule/1000
-    01-i4-power-flux-capsule/2000
-    01-i6-solidified-research-rune/50
-    ]
+      01-i6-solidified-research-rune/50
+      ]
 research: 04-t3-orb-turret
 itemCapacity: 50
 hasItems: true
