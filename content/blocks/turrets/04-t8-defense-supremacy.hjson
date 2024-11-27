@@ -69,7 +69,7 @@ shootType: {
       length: 250
       width: 6
       lifetime: 40
-      healPercent: 1
+      healPercent: 0.3
       collidesTeam: true
       incendAmount: 0
       hitEffect: {
