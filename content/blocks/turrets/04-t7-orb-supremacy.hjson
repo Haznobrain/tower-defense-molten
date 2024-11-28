@@ -9,7 +9,7 @@ shootSound: instDeath
 recoil: 4
 shootCone: 2
 shootShake: 15
-targetPriority: strongest
+unitSort: strongest
 outlineColor: 2d2f39
 squareSprite: false
 minWarmup: 0.96
