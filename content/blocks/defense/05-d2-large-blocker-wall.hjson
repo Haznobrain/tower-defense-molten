@@ -20,7 +20,7 @@ size: 3
 armor: 7.5
 requirements: [
     01-i5-defense-flux-capsule/225
-    01-i6-power-flux-capsule/45
+    01-i4-power-flux-capsule/45
       ]
 research: 05-d1-blocker-wall
 researchCost: [
