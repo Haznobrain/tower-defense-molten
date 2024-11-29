@@ -10,6 +10,7 @@ consumes: {
       }
 }
 category: defense
+conductivePower: true
 useTime: 72000
 healPercent: 5
 reload: 180
