@@ -9,6 +9,7 @@ consumes: {
     booster: true
       }
 }
+conductivePower: true
 category: defense
 useTime: 72000
 healPercent: 5
