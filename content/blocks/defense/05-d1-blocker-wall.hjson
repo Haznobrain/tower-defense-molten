@@ -1,0 +1,28 @@
+type: MendProjector
+consumes: {
+  power: 0.01
+  items: {
+    items: [
+          01-i6-solidified-research-rune/1
+          ]
+    optional: true
+    booster: true
+      }
+}
+useTime: 72000
+healPercent: 5
+reload: 180
+range: 24
+phaseBoost: 5
+phaseRangeBoost: 8
+health: 2700
+size: 2
+armor: 5
+requirements: [
+    01-i5-defense-flux-capsule/100
+    01-i6-power-flux-capsule/20
+      ]
+research: 00-c1-core-capsule
+researchCost: [
+    01-i6-solidified-research-rune/1
+        ]
