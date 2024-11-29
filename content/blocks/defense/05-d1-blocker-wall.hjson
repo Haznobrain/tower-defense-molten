@@ -20,7 +20,7 @@ size: 2
 armor: 5
 requirements: [
     01-i5-defense-flux-capsule/100
-    01-i6-power-flux-capsule/20
+    01-i4-power-flux-capsule/20
       ]
 research: 00-c1-core-capsule
 researchCost: [
