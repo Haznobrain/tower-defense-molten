@@ -9,6 +9,7 @@ consumes: {
     booster: true
       }
 }
+category: defense
 useTime: 72000
 healPercent: 5
 reload: 180
