@@ -16,13 +16,13 @@ range: 32
 phaseBoost: 5
 phaseRangeBoost: 8
 health: 6075
-size: 2
-armor: 5
+size: 3
+armor: 7.5
 requirements: [
     01-i5-defense-flux-capsule/225
     01-i6-power-flux-capsule/45
       ]
-research: 05-d2-blocker-wall
+research: 05-d1-blocker-wall
 researchCost: [
     01-i6-solidified-research-rune/2
         ]
