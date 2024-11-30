@@ -1,0 +1,110 @@
+type: flying
+health: 950
+armor: 14
+alwaysUnlocked: true
+controller: builderAI
+isEnemy: false
+mineWalls: false
+mineFloor: false
+buildSpeed: 1
+accel: 0.03
+drag: 0.02
+speed: 9
+rotateSpeed: 8
+flying: true
+engineOffset: 4
+engineSize: 3
+envDisabled: 0
+immunities: [
+  burning,
+  melting
+  ]
+itemCapacity: 80
+weapons: [
+  {
+type: BuildWeapon
+shootY: 6.25
+x: 10
+y: -8
+rotate: true
+rotateSpeed: 7
+}
+{
+reload: 100
+rotate: true
+rotateSpeed: 4
+y: 8
+x: 0
+mirror: false
+recoil: 0
+parts: [
+  {
+    type: ShapePart
+    layerOffset: -0.001
+    color: ffd37f
+    sides: 6
+    rotateSpeed: 0.9
+    followRotation: false
+    hollow: true
+    radius: 6
+    stroke: 3
+    
+      }
+{
+    type: ShapePart
+    circle: true
+    layerOffset: -0.001
+    radius: 2
+    color: ffd37f
+    followRotation: false
+      }
+{
+  type: HaloPart
+  followRotation: true
+  haloRotateSpeed: 0
+  shapes: 1
+  haloRotation: 15
+  color: ffd37f
+  shapeRotation: 180
+  tri: true
+  triLength: 0
+  triLengthTo: 2
+  mirror: true
+}
+]
+shootSound: malignShoot
+soundPitchMin: 2
+soundPitchMax: 2.5
+bullet: {
+    type: BasicBulletType
+    sprite: circle-bullet
+    damage: 90
+    splashDamage: 80
+    weaveMag: 5
+    weaveScl: 2
+    frontColor: ff0000
+    backColor: ffd37f
+    trailInterval: 5
+    speed: 5
+    trailEffect: {
+      type: ParticleEffect
+      colorTo: d4816b
+      line: true
+      lenFrom: 3
+      lenTo: 0
+      strokeFrom: 6
+      strokeTo: 0
+      lifetime: 30
+      length: 16
+      interp: circleOut
+        }
+    lifetime: 40
+    bulletInterval: 10
+    intervalBullets: 3
+    intervalRandomSpread: 5
+    intervalSpread: 120
+    intervalBullet: {
+        type: MissileBulletType
+        frontColor: ffffff
+        backColor: ffd37f
+        
