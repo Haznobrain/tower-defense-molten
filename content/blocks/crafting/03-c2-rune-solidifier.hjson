@@ -26,7 +26,7 @@ research: {
   objectives: [
   {
 type: OnSector
-preset: 00-s5-reroute
+preset: 00-s4-tightrope
 }
 ]
     }
