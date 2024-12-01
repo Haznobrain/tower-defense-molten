@@ -1,0 +1,15 @@
+    sector: 6,
+    planet: "molten-zone"
+    captureWave: 30
+    research: {
+        parent: 00-s6-gridlock
+        objectives: [
+          {
+          type: SectorComplete
+          preset: 00-s6-gridlock
+          }
+        ]
+          }
+    difficulty: 8
+    overrideLaunchDefaults: true
+    addStartingItems: true
