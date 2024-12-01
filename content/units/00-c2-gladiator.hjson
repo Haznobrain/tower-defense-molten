@@ -42,6 +42,7 @@ x: 10
 y: -8
 rotate: true
 rotateSpeed: 7
+name: 00-c2-gladiator-builder
 }
 {
 reload: 100
