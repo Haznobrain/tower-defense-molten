@@ -1,0 +1,17 @@
+type: CoreBlock
+health: 50000
+crushDamageMultiplier: 4
+size: 8
+itemCapacity: 15000
+unitType: 00-c2-gladiator
+unitCapModifier: 40
+thrusterLength: 15
+requirements: [
+  01-i1-boron-capsule/2000
+  01-i2-molten-research-rune/90
+  01-i6-solidified-research-rune/15
+  ]
+research: 00-c1-core-capsule
+alwaysUnlocked: false
+category: effect
+squareSprite: true
