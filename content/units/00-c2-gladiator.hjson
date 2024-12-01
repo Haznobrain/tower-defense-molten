@@ -6,14 +6,28 @@ controller: builderAI
 isEnemy: false
 mineWalls: false
 mineFloor: false
-buildSpeed: 1
+buildSpeed: 5
 accel: 0.03
 drag: 0.02
 speed: 9
 rotateSpeed: 8
 flying: true
-engineOffset: 4
-engineSize: 3
+engineOffset: 16
+engineSize: 6
+engines: [
+{
+radius: 6
+rotation: 45
+y: -13
+x: -10
+}
+{
+radius: 6
+rotation: -45
+y: -13
+x: -10
+}
+]
 envDisabled: 0
 immunities: [
   burning,
@@ -107,4 +121,52 @@ bullet: {
         type: MissileBulletType
         frontColor: ffffff
         backColor: ffd37f
-        
+        damage: 15
+        splashDamage: 32
+        splashDamageRadius: 30
+        hitEffect: {
+          type: MultiEffect
+          effects: [hitSquaresColor, {
+            type: WaveEffect
+            strokeFrom: 16
+            strokeTo: 0
+            sizeTo: 30
+            colorTo: ffd37f
+            lifetime: 15
+            }
+          ]
+        }
+        despawnEffect: none
+        hitColor: ffd37f
+        trailColor: ffd37f
+        trailEffect: none
+        trailLength: 10
+        speed: 3
+        weaveMag: 40
+        weaveScl: 6
+        lifetime: 40
+        }
+      trailColor: ffd37f
+      trailLength: 10
+      height: 16
+      width: 16
+      shrinkY: 0
+      shrinkX: 0
+      splashDamageRadius: 50
+      splashDamagePierce: true
+        hitEffect: {
+          type: MultiEffect
+          effects: [hitSquaresColor, {
+            type: WaveEffect
+            strokeFrom: 25
+            strokeTo: 0
+            sizeTo: 50
+            colorTo: ffd37f
+            lifetime: 15
+            }
+          ]
+        }
+        despawnEffect: none
+}
+}
+]
