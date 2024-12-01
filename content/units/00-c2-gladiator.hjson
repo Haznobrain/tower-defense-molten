@@ -2,6 +2,7 @@ type: flying
 health: 950
 armor: 14
 alwaysUnlocked: true
+hitSize: 40
 controller: builderAI
 isEnemy: false
 mineWalls: false
