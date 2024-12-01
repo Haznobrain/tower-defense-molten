@@ -266,6 +266,14 @@ requirements: [
 researchCost: [
       01-i6-solidified-research-rune/50
       ]
-research: 04-t3-orb-turret
+research:{
+  parent: 04-t3-orb-turret
+  objectives: [
+{
+type: SectorComplete
+preset: 00-s6-gridlock
+}
+]
+}
 itemCapacity: 50
 hasItems: true
